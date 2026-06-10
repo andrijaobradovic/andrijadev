@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "title": "AndrijaDev — Web Developer",
+    "description": "Pretvaram vaše ideje u web aplikacije. Profesionalni web development, dizajn i održavanje."
+  },
+  "nav": {
+    "home": "Početna",
+    "services": "Usluge",
+    "projects": "Projekti",
+    "about": "O meni",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "tagline": "Pretvaram vaše ideje u web aplikacije.",
+    "copyright": "© 2026 AndrijaDev"
+  },
+  "language": {
+    "en": "EN",
+    "sr": "SR"
+  },
+  "home": {
+    "title": "AndrijaDev",
+    "subtitle": "Pretvaram vaše ideje u web aplikacije."
+  },
+  "blog": {
+    "title": "Blog"
+  },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "description": "Stranica koju tražite ne postoji ili je premeštena.",
+    "backHome": "Nazad na početnu"
+  },
+  "a11y": {
+    "openMenu": "Otvori meni",
+    "closeMenu": "Zatvori meni",
+    "mainNav": "Glavna navigacija",
+    "footerNav": "Navigacija u podnožju",
+    "switchLanguage": "Promeni jezik",
+    "linkedin": "LinkedIn profil",
+    "instagram": "Instagram profil",
+    "email": "Pošalji email"
+  }
+}

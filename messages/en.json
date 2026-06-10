@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "title": "AndrijaDev — Web Developer",
+    "description": "Turning your ideas into web applications. Professional web development, design, and maintenance services."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Turning your ideas into web applications.",
+    "copyright": "© 2026 AndrijaDev"
+  },
+  "language": {
+    "en": "EN",
+    "sr": "SR"
+  },
+  "home": {
+    "title": "AndrijaDev",
+    "subtitle": "Turning your ideas into web applications."
+  },
+  "blog": {
+    "title": "Blog"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
+  },
+  "a11y": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation",
+    "footerNav": "Footer navigation",
+    "switchLanguage": "Switch language",
+    "linkedin": "LinkedIn profile",
+    "instagram": "Instagram profile",
+    "email": "Send email"
+  }
+}
