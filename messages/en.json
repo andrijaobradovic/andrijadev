@@ -54,23 +54,23 @@
       }
     },
     "process": {
-      "title": "From idea to project",
+      "title": "Work process",
       "steps": {
         "consultation": {
           "title": "Consultation",
-          "description": "We discuss your idea and goals. Clear communication from day one ensures we understand each other and define the right direction for the project."
+          "description": "We discuss your idea and goals. With clear communication, we define the right goals and direction of the project."
         },
         "plan": {
           "title": "Plan",
-          "description": "I define the architecture and project plan with a focus on code quality, maintainability, and performance that will serve your product long-term."
+          "description": "We define the architecture and project plan with a focus on code quality, maintainability and performance that will serve your product long-term and align with your goals."
         },
         "development": {
           "title": "Development",
-          "description": "I build the solution using Next.js, React, and TypeScript, with regular progress updates and room to adapt as we go."
+          "description": "I build the solution using Next.js, React, TypeScript and Supabase, with regular progress updates and room to adapt as we go."
         },
         "launch": {
           "title": "Launch",
-          "description": "Production deployment with performance and SEO optimization. I remain available for maintenance, updates, and support after launch."
+          "description": "Production deployment with performance and SEO optimization. With the agreement, i remain available for maintenance, updates, and support after launch."
         }
       }
     },
@@ -79,6 +79,93 @@
       "contact": "Contact me"
     },
     "avatarAlt": "Andrija Obradovic - web developer"
+  },
+  "services": {
+    "metadata": {
+      "title": "Services | Websites, Apps, Design - AndrijaDev",
+      "description": "Professional web development services including websites, web applications, design, maintenance, new features, and custom solutions."
+    },
+    "hero": {
+      "title": "What I offer",
+      "subtitle": "I provide professional web solutions that help businesses digitally connect with the public and achieve their goals.",
+      "contact": "Contact me"
+    },
+    "grid": {
+      "heading": "Services offered",
+      "carouselLabel": "Services carousel",
+      "dotsLabel": "Service slides",
+      "dotLabel": "Slide {index}"
+    },
+    "process": {
+      "title": "From idea to project"
+    },
+    "cta": {
+      "ready": "Ready to start?",
+      "contact": "Contact me",
+      "projects": "View projects"
+    },
+    "detail": {
+      "contact": "Contact me",
+      "metadata": {
+        "title": "{service} | Services - AndrijaDev"
+      }
+    },
+    "items": {
+      "websites": {
+        "title": "Websites",
+        "short": "Professional, responsive websites built with modern technologies to represent your brand and engage your audience.",
+        "detail": {
+          "p1": "A well-crafted website is the foundation of your digital presence. I build responsive, fast-loading websites that communicate your brand clearly and convert visitors into customers.",
+          "p2": "Each project is developed using Next.js, React, and TypeScript, ensuring clean code, excellent performance, and a structure that scales as your business grows. From landing pages to multi-page corporate sites, every detail is handled with precision.",
+          "p3": "Whether you need a brand-new website or a complete redesign of an existing one, I work closely with you from concept to launch to deliver a result that meets your business objectives."
+        }
+      },
+      "web-apps": {
+        "title": "Web Applications",
+        "short": "Custom web applications tailored to your business processes and needs, built with optimized performance, security, and long-term maintainability.",
+        "detail": {
+          "p1": "When your business requires more than a static website, I develop custom web applications designed around your specific workflows and requirements. From internal tools to customer-facing platforms, every solution is built to solve real problems.",
+          "p2": "Applications are developed with Next.js, React, TypeScript, and Supabase, providing a robust full-stack foundation. I focus on intuitive user interfaces, reliable data handling, and architecture that remains maintainable as features evolve.",
+          "p3": "Throughout development, you receive regular progress updates and the flexibility to refine requirements. The result is a production-ready application deployed with performance optimization and ongoing support available after launch."
+        }
+      },
+      "design": {
+        "title": "Web Design",
+        "short": "Clean, modern interface design of web presentation aligned with the needs of your brand, focused on usability and a professional visual impression.",
+        "detail": {
+          "p1": "Strong design is essential for building trust and guiding users toward action. I create interface designs that balance aesthetics with usability, ensuring every page serves a clear purpose within your digital strategy.",
+          "p2": "Design work covers layout structure, typography, color systems, and component styling consistent with your brand. Prototypes and mockups are prepared before development begins, so you can review and approve the direction early in the process.",
+          "p3": "The final design integrates seamlessly into the development phase, resulting in a cohesive product where visual quality matches technical execution. Every interface is crafted to leave a professional, lasting impression on your audience."
+        }
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "short": "Reliable support that keeps your website or application secure, up to date, and performing at its best.",
+        "detail": {
+          "p1": "Launching a product is only the beginning. I provide structured maintenance services to ensure your website or application remains secure, performant, and aligned with current standards long after deployment.",
+          "p2": "Maintenance covers dependency updates, security patches, performance monitoring, bug fixes, and content adjustments as needed. Proactive care prevents small issues from becoming costly problems and keeps your platform running smoothly.",
+          "p3": "I remain available as a dedicated technical partner, responding to issues promptly and advising on improvements when opportunities arise. Your digital product stays in capable hands so you can focus on your core business."
+        }
+      },
+      "new-features": {
+        "title": "New Features",
+        "short": "Seamless integration of new functionality into your existing website or application without disrupting current operations.",
+        "detail": {
+          "p1": "As your business evolves, your digital platform must evolve with it. I integrate new features into existing websites and applications, extending functionality while preserving stability and user experience.",
+          "p2": "Before any code is written, I assess the current architecture and plan the integration to minimize risk. New features are developed following the same quality standards as the original build, with thorough testing before deployment.",
+          "p3": "From contact forms and user dashboards to third-party API integrations and payment systems, each addition is implemented cleanly and documented for future reference. Your platform grows with your business without unnecessary complexity."
+        }
+      },
+      "custom-solutions": {
+        "title": "Custom Solutions",
+        "short": "Technical solutions for unique requirements that fall outside standard service categories.",
+        "detail": {
+          "p1": "Not every project fits a predefined category. For unique challenges — whether a specialized integration, a hybrid platform, or a technical consultation — I provide custom solutions designed specifically around your situation.",
+          "p2": "The process begins with a thorough assessment of your requirements, constraints, and objectives. Based on that analysis, I propose an approach that balances feasibility, timeline, and long-term value for your organization.",
+          "p3": "Custom engagements draw on the full breadth of my technical expertise across frontend, backend, design, and deployment. Whatever the scope, you receive the same commitment to quality, communication, and professional delivery."
+        }
+      }
+    }
   },
   "contact": {
     "metadata": {

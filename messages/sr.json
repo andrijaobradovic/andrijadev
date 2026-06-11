@@ -54,23 +54,23 @@
       }
     },
     "process": {
-      "title": "Od ideje do projekta",
+      "title": "Proces rada",
       "steps": {
         "consultation": {
           "title": "Konsultacija",
-          "description": "Razgovaramo o Vašoj ideji i ciljevima. Jasna komunikacija od prvog dana osigurava da razumemo jedni druge i definišemo pravi pravac projekta."
+          "description": "Razgovaramo o Vašoj ideji i ciljevima. Uz jasnu komunikaciju definišemo prave ciljeve i pravac projekta."
         },
         "plan": {
           "title": "Plan",
-          "description": "Definišem arhitekturu i plan projekta sa fokusom na kvalitet koda, održivost i performanse koje će Vaš proizvod raditi dugoročno."
+          "description": "Definišemo arhitekturu i plan projekta sa fokusom na kvalitet koda, održivost i performanse koje će Vaš proizvod raditi dugoročno i u skladu sa Vašim ciljevima."
         },
         "development": {
           "title": "Razvoj",
-          "description": "Gradim rešenje koristeći Next.js, React i TypeScript, sa redovnim ažuriranjima o napretku i mogućnošću prilagođavanja tokom rada."
+          "description": "Gradim rešenje koristeći Next.js, React, TypeScript i Supabase, sa redovnim ažuriranjima o napretku i mogućnošću prilagođavanja tokom rada."
         },
         "launch": {
           "title": "Lansiranje",
-          "description": "Deploy na produkciju sa optimizacijom performansi i SEO-a. Ostajem dostupan za održavanje, ažuriranja i podršku i nakon lansiranja."
+          "description": "Deploy na produkciju sa optimizacijom performansi i SEO-a. Uz dogovor, ostajem dostupan za održavanje, ažuriranja i podršku i nakon lansiranja."
         }
       }
     },
@@ -79,6 +79,93 @@
       "contact": "Kontaktiraj me"
     },
     "avatarAlt": "Andrija Obradovic - web developer"
+  },
+  "services": {
+    "metadata": {
+      "title": "Usluge | Web sajtovi, Aplikacije, Dizajn - AndrijaDev",
+      "description": "Profesionalne usluge web developmenta: izrada sajtova, web aplikacija, dizajn, održavanje, nove funkcije i prilagođena rešenja."
+    },
+    "hero": {
+      "title": "Šta nudim",
+      "subtitle": "Pružam profesionalna web rešenja koja pomažu biznisima da se digitalno povežu sa publikom i ostvare svoje ciljeve.",
+      "contact": "Kontaktiraj me"
+    },
+    "grid": {
+      "heading": "Ponuđene usluge",
+      "carouselLabel": "Karusel usluga",
+      "dotsLabel": "Slajdovi usluga",
+      "dotLabel": "Slajd {index}"
+    },
+    "process": {
+      "title": "Od ideje do projekta"
+    },
+    "cta": {
+      "ready": "Spremni da krenemo?",
+      "contact": "Kontaktiraj me",
+      "projects": "Pogledaj projekte"
+    },
+    "detail": {
+      "contact": "Kontaktiraj me",
+      "metadata": {
+        "title": "{service} | Usluge - AndrijaDev"
+      }
+    },
+    "items": {
+      "websites": {
+        "title": "Web sajtovi",
+        "short": "Profesionalni, responzivni sajtovi izgrađeni modernim tehnologijama koji predstavljaju Vaš brend i privlače publiku.",
+        "detail": {
+          "p1": "Kvalitetan web sajt je osnova Vašeg digitalnog prisustva. Gradim responzivne, brze sajtove koji jasno komuniciraju Vaš brend i pretvaraju posetioce u klijente.",
+          "p2": "Svaki projekat razvijam koristeći Next.js, React i TypeScript, uz čist kod, odlične performanse i strukturu koja raste zajedno sa Vašim biznisom. Od landing stranica do korporativnih sajtova sa više stranica — svaki detalj se obrađuje precizno.",
+          "p3": "Bilo da Vam treba potpuno nov sajt ili kompletan redizajn postojećeg, radim blisko sa Vama od koncepta do lansiranja kako bismo dostavili rezultat koji ispunjava poslovne ciljeve."
+        }
+      },
+      "web-apps": {
+        "title": "Web aplikacije",
+        "short": "Prilagođene web aplikacije po Vašim poslovnim procesima i potrebama, izgrađene uz optimizovane performanse, bezbednost i dugoročnu održivost.",
+        "detail": {
+          "p1": "Kada Vašem biznisu treba više od statičnog sajta, razvijam prilagođene web aplikacije dizajnirane oko Vaših specifičnih procesa i zahteva. Od internih alata do platformi za klijente — svako rešenje rešava stvarne probleme.",
+          "p2": "Aplikacije se razvijaju uz Next.js, React, TypeScript i Supabase, pružajući robusnu full-stack osnovu. Fokusiram se na intuitivan korisnički interfejs, pouzdano upravljanje podacima i arhitekturu koja ostaje održiva kako se funkcije proširuju.",
+          "p3": "Tokom razvoja dobijate redovna ažuriranja o napretku i fleksibilnost za usklađivanje zahteva. Rezultat je aplikacija spremna za produkciju, uz optimizaciju performansi i podršku i nakon lansiranja."
+        }
+      },
+      "design": {
+        "title": "Web dizajn",
+        "short": "Čist, moderan dizajn web prezentacija usklađen sa potrebama Vašeg brenda, fokusiran na upotrebljivost i profesionalan vizuelni utisak.",
+        "detail": {
+          "p1": "Kvalitetan dizajn je ključan za izgradnju poverenja i usmeravanje korisnika ka akciji. Kreiram dizajn interfejsa koji balansira estetiku i upotrebljivost, uz jasan cilj svake stranice u okviru Vaše digitalne strategije.",
+          "p2": "Dizajn obuhvata strukturu layouta, tipografiju, sistem boja i stilizaciju komponenti u skladu sa brendom. Prototipi i mockupi se pripremaju pre početka razvoja, kako biste pravovremeno pregledali i odobrili pravac.",
+          "p3": "Konačni dizajn se besprekorno integriše u fazu razvoja, dajući kohezivan proizvod u kome vizuelni kvalitet prati tehničku izvedbu. Svaki interfejs ostavlja profesionalan i trajan utisak na publiku."
+        }
+      },
+      "maintenance": {
+        "title": "Održavanje",
+        "short": "Pouzdana podrška koja održava Vaš sajt ili aplikaciju bezbednim, ažuriranim i performantnim.",
+        "detail": {
+          "p1": "Lansiranje proizvoda je tek početak. Pružam strukturisane usluge održavanja kako bi Vaš sajt ili aplikacija ostali bezbedni, performantni i usklađeni sa aktuelnim standardima dugo nakon deploya.",
+          "p2": "Održavanje obuhvata ažuriranje zavisnosti, sigurnosne zakrpe, praćenje performansi, ispravke grešaka i prilagođavanje sadržaja po potrebi. Proaktivna briga sprečava da manji problemi postanu skupi, a platforma radi besprekorno.",
+          "p3": "Ostajem dostupan kao posvećeni tehnički partner, brzo reagujem na probleme i savetujem o poboljšanjima kada se ukaže prilika. Vaš digitalni proizvod je u pouzdanim rukama, a Vi se fokusirate na svoj biznis."
+        }
+      },
+      "new-features": {
+        "title": "Nove funkcije",
+        "short": "Besprekorna integracija novih funkcionalnosti u postojeći sajt ili aplikaciju, bez narušavanja trenutnog rada.",
+        "detail": {
+          "p1": "Kako se Vaš biznis razvija, digitalna platforma mora da raste sa njim. Integrišem nove funkcije u postojeće sajtove i aplikacije, proširujući mogućnosti uz očuvanje stabilnosti i korisničkog iskustva.",
+          "p2": "Pre pisanja koda procenjujem postojeću arhitekturu i planiram integraciju kako bih minimizovao rizik. Nove funkcije se razvijaju po istim standardima kvaliteta kao i originalni projekat, uz temeljno testiranje pre objave.",
+          "p3": "Od kontakt formi i korisničkih panela do integracija sa API-jima i platnih sistema — svako proširenje se implementira čisto i dokumentuje za buduću referencu. Platforma raste sa biznisom bez nepotrebne složenosti."
+        }
+      },
+      "custom-solutions": {
+        "title": "Prilagođena rešenja",
+        "short": "Tehnička rešenja za jedinstvene zahteve koji ne spadaju u standardne kategorije usluga.",
+        "detail": {
+          "p1": "Ne svaki projekat odgovara unapred definisanoj kategoriji. Za jedinstvene izazove — bilo specijalizovanu integraciju, hibridnu platformu ili tehničko savetovanje — pružam prilagođena rešenja dizajnirana tačno za Vašu situaciju.",
+          "p2": "Proces počinje detaljnom procenom zahteva, ograničenja i ciljeva. Na osnovu te analize predlažem pristup koji balansira izvodljivost, rokove i dugoročnu vrednost za Vašu organizaciju.",
+          "p3": "Prilagođeni angažmani koriste celokupno tehničko znanje iz frontenda, backenda, dizajna i deploya. Bez obzira na obim, dobijate istu posvećenost kvalitetu, komunikaciji i profesionalnoj isporuci."
+        }
+      }
+    }
   },
   "contact": {
     "metadata": {
