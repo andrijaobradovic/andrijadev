@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "AndrijaDev — Web Developer",
+    "title": "AndrijaDev - Web Developer",
     "description": "Pretvaram vaše ideje u web aplikacije. Profesionalni web development, dizajn i održavanje."
   },
   "nav": {
@@ -24,6 +24,99 @@
   },
   "blog": {
     "title": "Blog"
+  },
+  "about": {
+    "metadata": {
+      "title": "O meni - AndrijaDev",
+      "description": "Profesionalni web development, dizajn i održavanje. Upoznajte developera iza AndrijaDev brenda."
+    },
+    "hero": {
+      "greeting": "Zdravo, ja sam",
+      "name": "Andrija",
+      "subtitle1": "Pomažem biznisima da ostvare svoje digitalne ideje.",
+      "subtitle2": "AndrijaDev je moj freelance brend za moderne web aplikacije."
+    },
+    "bio": {
+      "paragraph1": "Diplomirani sam matematičar sa Matematičkog fakulteta, Univerziteta u Beogradu. Gradim web sajtove i aplikacije koristeći Next.js, React i TypeScript.",
+      "paragraph2": "Cenim jasnu komunikaciju i poštovanje rokova. Nakon lansiranja ostajem dostupan za održavanje i podršku."
+    },
+    "tech": {
+      "title": "Tehnologije koje koristim",
+      "items": {
+        "nextjs": "Next.js",
+        "react": "React",
+        "typescript": "TypeScript",
+        "tailwind": "Tailwind CSS",
+        "supabase": "Supabase",
+        "bootstrap": "Bootstrap",
+        "git": "Git",
+        "vercel": "Vercel"
+      }
+    },
+    "process": {
+      "title": "Od ideje do projekta",
+      "steps": {
+        "consultation": {
+          "title": "Konsultacija",
+          "description": "Razgovaramo o Vašoj ideji i ciljevima. Jasna komunikacija od prvog dana osigurava da razumemo jedni druge i definišemo pravi pravac projekta."
+        },
+        "plan": {
+          "title": "Plan",
+          "description": "Definišem arhitekturu i plan projekta sa fokusom na kvalitet koda, održivost i performanse koje će Vaš proizvod raditi dugoročno."
+        },
+        "development": {
+          "title": "Razvoj",
+          "description": "Gradim rešenje koristeći Next.js, React i TypeScript, sa redovnim ažuriranjima o napretku i mogućnošću prilagođavanja tokom rada."
+        },
+        "launch": {
+          "title": "Lansiranje",
+          "description": "Deploy na produkciju sa optimizacijom performansi i SEO-a. Ostajem dostupan za održavanje, ažuriranja i podršku i nakon lansiranja."
+        }
+      }
+    },
+    "cta": {
+      "projects": "Pogledaj projekte",
+      "contact": "Kontaktiraj me"
+    },
+    "avatarAlt": "Andrija Obradovic - web developer"
+  },
+  "contact": {
+    "metadata": {
+      "title": "Kontakt — AndrijaDev",
+      "description": "Kontaktirajte me u vezi sajtova, web aplikacija, dizajna ili održavanja. Pošaljite poruku i odgovoriću u najkraćem roku."
+    },
+    "hero": {
+      "title": "Kontaktirajte me",
+      "subtitle": "Pišite mi o Vašoj ideji - web sajtovi, web aplikacije, dizajn ili održavanje."
+    },
+    "info": {
+      "intro": "Dostupan sam za nove projekte i saradnje. Javite se da razgovaramo o tome kako mogu da Vam pomognem u ostvarenju Vaše ideje.",
+      "location": "Beograd, Srbija"
+    },
+    "form": {
+      "name": "Ime",
+      "email": "Email",
+      "subject": "Naslov",
+      "message": "Poruka",
+      "namePlaceholder": "Marko Marković",
+      "emailPlaceholder": "vaš@mail.com",
+      "subjectPlaceholder": "Upit za projekat",
+      "messagePlaceholder": "Kako mogu da pomognem?",
+      "submit": "Pošalji poruku",
+      "sending": "Slanje...",
+      "privacy": "Vaši podaci se koriste isključivo za odgovor na vaš upit.",
+      "characters": "{count} / {max}",
+      "success": "Vaša poruka je uspešno poslata.",
+      "errors": {
+        "nameRequired": "Ime je obavezno.",
+        "emailRequired": "Email je obavezan.",
+        "emailInvalid": "Unesite ispravnu email adresu.",
+        "subjectRequired": "Naslov je obavezan.",
+        "messageRequired": "Poruka je obavezna.",
+        "messageMax": "Poruka ne sme biti duža od 1000 karaktera.",
+        "generic": "Došlo je do greške. Pokušajte ponovo."
+      }
+    }
   },
   "notFound": {
     "title": "Stranica nije pronađena",

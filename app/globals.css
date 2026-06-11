@@ -214,4 +214,30 @@
   .nav-link::after {
     transition: none;
   }
+
+  .tech-marquee-track {
+    transform: none !important;
+  }
+}
+
+.tech-marquee {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 14%,
+    black 86%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 14%,
+    black 86%,
+    transparent 100%
+  );
+}
+
+.tech-marquee-track {
+  will-change: transform;
+  backface-visibility: hidden;
 }

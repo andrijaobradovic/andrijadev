@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 type Props = {
   children: React.ReactNode;
@@ -44,6 +45,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <Header />
       <main className="flex flex-1 flex-col">{children}</main>
       <Footer />
+      <Toaster position="bottom-right" richColors closeButton />
     </NextIntlClientProvider>
   );
 }

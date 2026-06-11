@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "AndrijaDev — Web Developer",
+    "title": "AndrijaDev - Web Developer",
     "description": "Turning your ideas into web applications. Professional web development, design, and maintenance services."
   },
   "nav": {
@@ -24,6 +24,99 @@
   },
   "blog": {
     "title": "Blog"
+  },
+  "about": {
+    "metadata": {
+      "title": "About - AndrijaDev",
+      "description": "Professional web development, design, and maintenance. Meet the developer behind the AndrijaDev brand."
+    },
+    "hero": {
+      "greeting": "Hello, I'm",
+      "name": "Andrija",
+      "subtitle1": "I help businesses bring their digital ideas to life.",
+      "subtitle2": "AndrijaDev is my freelance brand for modern web applications."
+    },
+    "bio": {
+      "paragraph1": "I am a graduate mathematician from the Faculty of Mathematics, University of Belgrade. I build websites and applications using Next.js, React, and TypeScript.",
+      "paragraph2": "I value clear communication and meeting deadlines. After launch, I remain available for maintenance and support."
+    },
+    "tech": {
+      "title": "Technologies I use",
+      "items": {
+        "nextjs": "Next.js",
+        "react": "React",
+        "typescript": "TypeScript",
+        "tailwind": "Tailwind CSS",
+        "supabase": "Supabase",
+        "bootstrap": "Bootstrap",
+        "git": "Git",
+        "vercel": "Vercel"
+      }
+    },
+    "process": {
+      "title": "From idea to project",
+      "steps": {
+        "consultation": {
+          "title": "Consultation",
+          "description": "We discuss your idea and goals. Clear communication from day one ensures we understand each other and define the right direction for the project."
+        },
+        "plan": {
+          "title": "Plan",
+          "description": "I define the architecture and project plan with a focus on code quality, maintainability, and performance that will serve your product long-term."
+        },
+        "development": {
+          "title": "Development",
+          "description": "I build the solution using Next.js, React, and TypeScript, with regular progress updates and room to adapt as we go."
+        },
+        "launch": {
+          "title": "Launch",
+          "description": "Production deployment with performance and SEO optimization. I remain available for maintenance, updates, and support after launch."
+        }
+      }
+    },
+    "cta": {
+      "projects": "View projects",
+      "contact": "Contact me"
+    },
+    "avatarAlt": "Andrija Obradovic - web developer"
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact - AndrijaDev",
+      "description": "Get in touch about websites, web apps, design, or maintenance. Send a message and I'll respond as soon as possible."
+    },
+    "hero": {
+      "title": "Get in touch",
+      "subtitle": "Tell me about your idea - websites, web apps, design, or maintenance."
+    },
+    "info": {
+      "intro": "Available for new projects and collaborations. Reach out and let's discuss how I can help bring your idea to life.",
+      "location": "Belgrade, Serbia"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "you@example.com",
+      "subjectPlaceholder": "Project inquiry",
+      "messagePlaceholder": "What can I help you with?",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "privacy": "Your information is only used to respond to your inquiry.",
+      "characters": "{count} / {max}",
+      "success": "Your message has been sent successfully.",
+      "errors": {
+        "nameRequired": "Name is required.",
+        "emailRequired": "Email is required.",
+        "emailInvalid": "Please enter a valid email address.",
+        "subjectRequired": "Subject is required.",
+        "messageRequired": "Message is required.",
+        "messageMax": "Message must not exceed 1000 characters.",
+        "generic": "Something went wrong. Please try again."
+      }
+    }
   },
   "notFound": {
     "title": "Page not found",

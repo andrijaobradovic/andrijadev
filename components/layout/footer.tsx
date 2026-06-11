@@ -30,8 +30,8 @@ export async function Footer() {
   return (
     <footer className="mt-auto border-t border-border/30 bg-background/20 backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-3 lg:items-start">
-          <div className="space-y-3">
+        <div className="grid gap-10 text-center lg:grid-cols-3 lg:items-start lg:text-left">
+          <div className="flex flex-col items-center space-y-3 lg:items-start">
             <Logo />
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
               {tFooter("tagline")}
@@ -39,7 +39,7 @@ export async function Footer() {
           </div>
 
           <nav aria-label={tA11y("footerNav")} className="lg:text-center">
-            <ul className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-center lg:gap-6">
+            <ul className="flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-center lg:gap-6">
               {footerRoutes.map(({ href, key }) => (
                 <li key={key}>
                   <Link
@@ -53,7 +53,7 @@ export async function Footer() {
             </ul>
           </nav>
 
-          <div className="flex flex-col gap-4 lg:items-end">
+          <div className="flex flex-col items-center gap-4 lg:items-end">
             <a
               href={`mailto:${CONTACT_EMAIL}`}
               className="inline-flex items-center gap-2 text-sm text-foreground/80 transition-colors hover:text-primary"
