@@ -20,7 +20,12 @@
   },
   "home": {
     "title": "AndrijaDev",
-    "subtitle": "Pretvaram vaše ideje u web aplikacije."
+    "subtitle": "Pretvaram vaše ideje u web aplikacije.",
+    "featured": {
+      "title": "Izdvojeni projekti",
+      "subtitle": "Izbor nedavnih radova izrađenih za klijente i lične projekte.",
+      "viewAll": "Pogledaj projekte"
+    }
   },
   "blog": {
     "title": "Blog"
@@ -165,6 +170,39 @@
           "p3": "Prilagođeni angažmani koriste celokupno tehničko znanje iz frontenda, backenda, dizajna i deploya. Bez obzira na obim, dobijate istu posvećenost kvalitetu, komunikaciji i profesionalnoj isporuci."
         }
       }
+    }
+  },
+  "projects": {
+    "metadata": {
+      "title": "Projekti | AndrijaDev",
+      "description": "Pogledajte sajtove i web aplikacije izrađene u Next.js, React, TypeScript i modernim alatima."
+    },
+    "hero": {
+      "title": "Projekti",
+      "subtitle": "Portfolio sajtova i web aplikacija isporučenih za klijente i lične projekte."
+    },
+    "grid": {
+      "heading": "Svi projekti",
+      "loadMore": "Učitaj još"
+    },
+    "card": {
+      "visit": "Poseti sajt",
+      "visitAriaLabel": "Poseti sajt projekta {title}",
+      "imageAlt": "Pregled projekta {title}"
+    },
+    "cta": {
+      "title": "Imate ideju za projekat?",
+      "contact": "Kontaktiraj me"
+    },
+    "empty": {
+      "title": "Projekti uskoro",
+      "description": "Novi portfolio radovi su u pripremi. Do tada, slobodno mi se javite oko vašeg projekta.",
+      "contact": "Kontaktiraj me"
+    },
+    "error": {
+      "title": "Projekti se ne mogu učitati",
+      "description": "Došlo je do greške pri učitavanju portfolio podataka. Pokušajte ponovo.",
+      "retry": "Pokušaj ponovo"
     }
   },
   "contact": {

@@ -20,14 +20,19 @@
   },
   "home": {
     "title": "AndrijaDev",
-    "subtitle": "Turning your ideas into web applications."
+    "subtitle": "Turning your ideas into web applications.",
+    "featured": {
+      "title": "Featured projects",
+      "subtitle": "A selection of recent work built for clients and personal projects.",
+      "viewAll": "View projects"
+    }
   },
   "blog": {
     "title": "Blog"
   },
   "about": {
     "metadata": {
-      "title": "About - AndrijaDev",
+      "title": "About | AndrijaDev",
       "description": "Professional web development, design, and maintenance. Meet the developer behind the AndrijaDev brand."
     },
     "hero": {
@@ -167,9 +172,42 @@
       }
     }
   },
+  "projects": {
+    "metadata": {
+      "title": "Projects | AndrijaDev",
+      "description": "Explore websites and web applications built with Next.js, React, TypeScript, and modern tooling."
+    },
+    "hero": {
+      "title": "Projects",
+      "subtitle": "A portfolio of websites and web applications delivered for clients and personal work."
+    },
+    "grid": {
+      "heading": "All projects",
+      "loadMore": "Load more"
+    },
+    "card": {
+      "visit": "Visit site",
+      "visitAriaLabel": "Visit {title} website",
+      "imageAlt": "Preview of {title}"
+    },
+    "cta": {
+      "title": "Have a project in mind?",
+      "contact": "Contact me"
+    },
+    "empty": {
+      "title": "Projects coming soon",
+      "description": "New portfolio work is on the way. In the meantime, feel free to reach out about your project.",
+      "contact": "Contact me"
+    },
+    "error": {
+      "title": "Unable to load projects",
+      "description": "Something went wrong while fetching portfolio data. Please try again.",
+      "retry": "Try again"
+    }
+  },
   "contact": {
     "metadata": {
-      "title": "Contact - AndrijaDev",
+      "title": "Contact | AndrijaDev",
       "description": "Get in touch about websites, web apps, design, or maintenance. Send a message and I'll respond as soon as possible."
     },
     "hero": {
