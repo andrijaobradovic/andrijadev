@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { RiExternalLinkLine } from "@remixicon/react";
 import { OutlineFillButton } from "@/components/ui/outline-fill-button";
 import { ProjectTechMarquee } from "@/components/projects/project-tech-marquee";
+import { PROJECT_PLACEHOLDER_IMAGE } from "@/lib/project-image";
 import { cn } from "@/lib/utils";
 import type { Project } from "@/lib/project-types";
 
@@ -35,9 +36,14 @@ export function ProjectCard({
   className,
 }: ProjectCardProps) {
   const t = useTranslations("projects.card");
+  const [imageSrc, setImageSrc] = useState(project.imageSrc);
   const [isTouch, setIsTouch] = useState(false);
   const [internalExpanded, setInternalExpanded] = useState(false);
   const [marqueeActive, setMarqueeActive] = useState(false);
+
+  useEffect(() => {
+    setImageSrc(project.imageSrc);
+  }, [project.imageSrc]);
   const isControlled = isExpanded !== undefined && onToggle !== undefined;
   const isActive = isTouch && (isControlled ? isExpanded : internalExpanded);
 
@@ -86,12 +92,17 @@ export function ProjectCard({
     >
       <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden">
         <Image
-          src={project.imageSrc}
+          src={imageSrc}
           alt={t("imageAlt", { title: project.title })}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          unoptimized={!isLocalImage(project.imageSrc)}
+          unoptimized={!isLocalImage(imageSrc)}
           className="object-cover"
+          onError={() => {
+            if (imageSrc !== PROJECT_PLACEHOLDER_IMAGE) {
+              setImageSrc(PROJECT_PLACEHOLDER_IMAGE);
+            }
+          }}
         />
 
         <div

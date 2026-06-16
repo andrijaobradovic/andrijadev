@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { RiMacbookLine } from "@remixicon/react";
 import { OutlineFillButton } from "@/components/ui/outline-fill-button";
 
 export async function ServicesHero() {
@@ -13,9 +14,13 @@ export async function ServicesHero() {
       <div className="space-y-3">
         <h1
           id="services-hero-title"
-          className="font-heading text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl"
+          className="flex items-center justify-center gap-3 font-heading text-3xl font-bold tracking-tight sm:justify-start sm:text-4xl lg:text-5xl"
         >
           {t("title")}
+          <RiMacbookLine
+            className="size-8 shrink-0 text-primary sm:size-9 lg:size-10"
+            aria-hidden
+          />
         </h1>
         <p className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
           {t("subtitle")}

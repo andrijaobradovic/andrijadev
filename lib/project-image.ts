@@ -1,4 +1,5 @@
 const OG_FETCH_TIMEOUT_MS = 3000;
+const IMAGE_CHECK_TIMEOUT_MS = 2500;
 export const PROJECT_PLACEHOLDER_IMAGE = "/project-placeholder.png";
 
 function resolveAbsoluteUrl(candidate: string, baseUrl: string): string {
@@ -6,6 +7,22 @@ function resolveAbsoluteUrl(candidate: string, baseUrl: string): string {
     return new URL(candidate, baseUrl).href;
   } catch {
     return candidate;
+  }
+}
+
+/** Keep og:image on the project URL origin (Supabase `url`), not metadataBase/canonical host. */
+function alignOgImageToProjectUrl(ogUrl: string, pageUrl: string): string {
+  try {
+    const og = new URL(ogUrl);
+    const page = new URL(pageUrl);
+
+    if (og.hostname === page.hostname) {
+      return og.href;
+    }
+
+    return new URL(`${og.pathname}${og.search}`, page.origin).href;
+  } catch {
+    return ogUrl;
   }
 }
 
@@ -20,11 +37,39 @@ function extractOgImage(html: string, pageUrl: string): string | null {
   for (const pattern of patterns) {
     const match = html.match(pattern);
     if (match?.[1]) {
-      return resolveAbsoluteUrl(match[1], pageUrl);
+      const resolved = resolveAbsoluteUrl(match[1], pageUrl);
+      return alignOgImageToProjectUrl(resolved, pageUrl);
     }
   }
 
   return null;
+}
+
+async function isImageReachable(imageUrl: string): Promise<boolean> {
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), IMAGE_CHECK_TIMEOUT_MS);
+
+    const response = await fetch(imageUrl, {
+      method: "HEAD",
+      signal: controller.signal,
+      headers: {
+        "User-Agent": "Mozilla/5.0 (compatible; AndrijaDev/1.0; +https://andrijadev.com)",
+      },
+      next: { revalidate: 3600 },
+    });
+
+    clearTimeout(timeout);
+
+    if (!response.ok) {
+      return false;
+    }
+
+    const contentType = response.headers.get("content-type") ?? "";
+    return contentType.startsWith("image/");
+  } catch {
+    return false;
+  }
 }
 
 export async function fetchOgImage(pageUrl: string): Promise<string | null> {
@@ -63,7 +108,8 @@ export async function resolveProjectImageUrl(
   project: ProjectImageSource
 ): Promise<string> {
   const ogImage = await fetchOgImage(project.url);
-  if (ogImage) {
+
+  if (ogImage && (await isImageReachable(ogImage))) {
     return ogImage;
   }
 
