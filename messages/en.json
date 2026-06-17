@@ -19,12 +19,28 @@
     "sr": "SR"
   },
   "home": {
-    "title": "AndrijaDev",
-    "subtitle": "Turning your ideas into web applications.",
+    "hero": {
+      "titleAndrija": "Andrija",
+      "titleDev": "Dev",
+      "subtitle": "Andrija Obradovic - Web Developer",
+      "description": "I help businesses and individuals turn their ideas into modern, high-performance web applications. From websites to full-stack apps, I focus on clean code, clear communication, and reliable delivery.",
+      "contact": "Contact me",
+      "experienceValue": "1+",
+      "experienceLabel": "{count, plural, one {year of experience} other {years of experience}}",
+      "projectsLabel": "{count, plural, one {project} other {projects}}",
+      "scrollToAbout": "Scroll to About section"
+    },
+    "aboutPreview": {
+      "title": "About me",
+      "description": "I am a graduate mathematician from the Faculty of Mathematics, University of Belgrade. I build websites and applications using Next.js, React, and TypeScript.",
+      "cta": "More about me",
+      "imageAlt": "Andrija Obradovic - web developer"
+    },
     "featured": {
-      "title": "Featured projects",
+      "title": "Selected work",
       "subtitle": "A selection of recent work built for clients and personal projects.",
-      "viewAll": "View projects"
+      "viewAll": "View projects",
+      "empty": "Projects coming soon"
     }
   },
   "blog": {

@@ -19,12 +19,28 @@
     "sr": "SR"
   },
   "home": {
-    "title": "AndrijaDev",
-    "subtitle": "Pretvaram vaše ideje u web aplikacije.",
+    "hero": {
+      "titleAndrija": "Andrija",
+      "titleDev": "Dev",
+      "subtitle": "Andrija Obradovic - Web Developer",
+      "description": "Pomažem biznisima i pojedincima da pretvore svoje ideje u moderne, visokoperformansne web aplikacije. Od sajtova do full-stack rešenja, fokusiram se na čist kod, jasnu komunikaciju i pouzdanu isporuku.",
+      "contact": "Kontaktiraj me",
+      "experienceValue": "1+",
+      "experienceLabel": "godina iskustva",
+      "projectsLabel": "{count, plural, one {projekat} few {projekta} other {projekata}}",
+      "scrollToAbout": "Skroluj do sekcije O meni"
+    },
+    "aboutPreview": {
+      "title": "O meni",
+      "description": "Diplomirani sam matematičar sa Matematičkog fakulteta, Univerziteta u Beogradu. Gradim web sajtove i aplikacije koristeći Next.js, React i TypeScript.",
+      "cta": "Više o meni",
+      "imageAlt": "Andrija Obradovic - web developer"
+    },
     "featured": {
-      "title": "Izdvojeni projekti",
+      "title": "Istaknuti projekti",
       "subtitle": "Izbor nedavnih radova izrađenih za klijente i lične projekte.",
-      "viewAll": "Pogledaj projekte"
+      "viewAll": "Pogledaj projekte",
+      "empty": "Projekti uskoro"
     }
   },
   "blog": {

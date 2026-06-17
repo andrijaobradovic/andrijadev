@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { TECH_STACK } from "./tech-icons";
+import { cn } from "@/lib/utils";
 
 const LOOP_DURATION_MS = 40_000;
 const HOLD_AFTER_RELEASE_MS = 800;
@@ -17,7 +18,7 @@ function normalizeOffset(offset: number, loopWidth: number) {
   return value;
 }
 
-export function TechMarquee() {
+export function TechMarquee({ className }: { className?: string }) {
   const t = useTranslations("about.tech");
   const locale = useLocale();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -184,7 +185,10 @@ export function TechMarquee() {
       </ul>
       <div
         ref={containerRef}
-        className="tech-marquee mx-auto w-[80%] cursor-grab overflow-hidden py-2 touch-none select-none active:cursor-grabbing"
+        className={cn(
+          "tech-marquee mx-auto w-[80%] cursor-grab overflow-hidden py-2 touch-none select-none active:cursor-grabbing",
+          className
+        )}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={endDrag}
