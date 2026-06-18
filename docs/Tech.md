@@ -31,7 +31,7 @@ Projekat je Next.js aplikacija inicijalizovana sa `create-next-app`, sa već pos
 - **shadcn/ui:** `components.json` (style `radix-sera`, baseColor `neutral`, iconLibrary `remixicon`, RSC uključen). Alias-i: `@/components`, `@/components/ui`, `@/lib`, `@/lib/utils`, `@/hooks`.
 - **Stilovi/tema:** `app/globals.css` — Tailwind v4, definisana paleta (tamno-ljubičasta + neon-zelena `#95f702`), animirani gradijent pozadine, font varijable.
 - **Fontovi:** `app/layout.tsx` — `Space_Grotesk` (naslovi, `--font-heading`), `Raleway` (telo, `--font-sans`), uz Geist Sans/Mono.
-- **Supabase helperi:** `utils/supabase/client.ts` (browser), `utils/supabase/server.ts` (server, koristi `cookies()`), `utils/supabase/middleware.ts` (refresh sesije).
+- **Supabase helperi:** `utils/supabase/server.ts` (server, koristi `cookies()`).
 - **Kontakt:** `app/api/contact/route.ts` — POST ruta, validira polja i šalje email preko Resend-a.
 - **Utili:** `lib/utils.ts` — `cn()` (clsx + tailwind-merge).
 - **UI:** `components/ui/button.tsx`.

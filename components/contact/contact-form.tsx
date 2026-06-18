@@ -140,6 +140,7 @@ export function ContactForm() {
               name="name"
               type="text"
               autoComplete="name"
+              maxLength={25}
               placeholder={t("namePlaceholder")}
               value={form.name}
               onChange={(event) => updateField("name", event.target.value)}
@@ -158,6 +159,7 @@ export function ContactForm() {
               name="email"
               type="email"
               autoComplete="email"
+              maxLength={80}
               placeholder={t("emailPlaceholder")}
               value={form.email}
               onChange={(event) => updateField("email", event.target.value)}
@@ -175,6 +177,7 @@ export function ContactForm() {
               id="subject"
               name="subject"
               type="text"
+              maxLength={30}
               placeholder={t("subjectPlaceholder")}
               value={form.subject}
               onChange={(event) => updateField("subject", event.target.value)}

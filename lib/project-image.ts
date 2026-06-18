@@ -119,16 +119,3 @@ export async function resolveProjectImageUrl(
 
   return PROJECT_PLACEHOLDER_IMAGE;
 }
-
-export async function resolveProjectImages<T extends ProjectImageSource & { id: string }>(
-  projects: T[]
-): Promise<(T & { imageSrc: string })[]> {
-  const resolved = await Promise.all(
-    projects.map(async (project) => ({
-      ...project,
-      imageSrc: await resolveProjectImageUrl(project),
-    }))
-  );
-
-  return resolved;
-}

@@ -29,9 +29,7 @@ export default async function ProjectsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const { projects, total } = await getProjectsForPage(locale, {
-    resolveImagesForCount: 6,
-  });
+  const { projects, total } = await getProjectsForPage(locale);
 
   return (
     <div className="mx-auto w-[80%] flex-1 px-4 py-16 sm:py-20 lg:py-24">

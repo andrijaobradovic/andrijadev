@@ -41,21 +41,10 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
   const searchParams = useSearchParams();
   const pageSize = usePageSize();
   const gridRef = useRef<HTMLDivElement>(null);
-  const resolvedIdsRef = useRef(
-    new Set(
-      projects
-        .slice(0, PROJECTS_PAGE_SIZE_DESKTOP)
-        .map((project) => project.id)
-    )
-  );
 
   const initialPage = Math.max(1, Number(searchParams.get("page")) || 1);
   const [page, setPage] = useState(initialPage);
   const [expandedId, setExpandedId] = useState<string | null>(null);
-  const [imageMap, setImageMap] = useState<Record<string, string>>(() =>
-    Object.fromEntries(projects.map((project) => [project.id, project.imageSrc]))
-  );
-  const [isResolving, setIsResolving] = useState(false);
 
   const visibleCount = page * pageSize;
   const visibleProjects = useMemo(
@@ -73,71 +62,6 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
     }
     window.history.replaceState(null, "", url.toString());
   }, []);
-
-  const resolveImagesForProjects = useCallback(async (batch: Project[]) => {
-    const toResolve = batch.filter(
-      (project) => !resolvedIdsRef.current.has(project.id)
-    );
-
-    if (toResolve.length === 0) {
-      return;
-    }
-
-    setIsResolving(true);
-
-    try {
-      const response = await fetch("/api/projects/resolve-images", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          projects: toResolve.map((project) => ({
-            id: project.id,
-            url: project.url,
-            image_url: project.image_url,
-          })),
-        }),
-      });
-
-      if (!response.ok) {
-        return;
-      }
-
-      const data = (await response.json()) as {
-        images: { id: string; imageSrc: string }[];
-      };
-
-      for (const item of data.images) {
-        resolvedIdsRef.current.add(item.id);
-      }
-
-      setImageMap((current) => {
-        const next = { ...current };
-        for (const item of data.images) {
-          next[item.id] = item.imageSrc;
-        }
-        return next;
-      });
-    } finally {
-      setIsResolving(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    const batch = projects.slice(0, pageSize);
-    void resolveImagesForProjects(batch);
-  }, [pageSize, projects, resolveImagesForProjects]);
-
-  useEffect(() => {
-    if (page <= 1) {
-      return;
-    }
-
-    const start = (page - 1) * pageSize;
-    const batch = projects.slice(start, start + pageSize);
-    if (batch.length > 0) {
-      void resolveImagesForProjects(batch);
-    }
-  }, [page, pageSize, projects, resolveImagesForProjects]);
 
   useEffect(() => {
     const handlePointerDown = (event: PointerEvent) => {
@@ -165,7 +89,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
     title: project.title,
     description: project.description,
     url: project.url,
-    imageSrc: imageMap[project.id] ?? project.imageSrc,
+    imageSrc: project.imageSrc,
     technologies: project.technologies,
   });
 
@@ -190,7 +114,6 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
           <OutlineFillButton
             type="button"
             className="h-8 px-4 text-[10px] sm:h-10 sm:px-6 sm:text-xs"
-            disabled={isResolving}
             onClick={handleLoadMore}
           >
             {t("loadMore")}

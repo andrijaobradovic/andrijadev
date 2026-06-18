@@ -3,13 +3,12 @@ import "server-only";
 import { cache } from "react";
 import { cookies } from "next/headers";
 import { createClient } from "@/utils/supabase/server";
+import { createAdminClient } from "@/utils/supabase/admin";
 import {
   PROJECT_PLACEHOLDER_IMAGE,
   resolveProjectImageUrl,
-  resolveProjectImages,
 } from "@/lib/project-image";
 import {
-  PROJECTS_PAGE_SIZE_DESKTOP,
   pickFeaturedProjectRows,
   sortProjectRows,
   type Project,
@@ -29,10 +28,7 @@ async function getSupabaseClient() {
   return createClient(cookieStore);
 }
 
-function mapProjectRow(
-  row: ProjectRow,
-  locale: string
-): Omit<Project, "imageSrc"> {
+function mapProjectRow(row: ProjectRow, locale: string): Project {
   const isSerbian = locale === "sr";
 
   return {
@@ -41,6 +37,7 @@ function mapProjectRow(
     description: isSerbian ? row.description_sr : row.description_en,
     url: row.url,
     image_url: row.image_url,
+    imageSrc: row.image_url ?? PROJECT_PLACEHOLDER_IMAGE,
     technologies: row.technologies ?? [],
     isFeatured: row.is_featured,
     featuredAt: row.featured_at,
@@ -67,34 +64,12 @@ export async function getProjectCount(): Promise<number> {
   return rows.length;
 }
 
-export async function getProjectsForPage(
-  locale: string,
-  options?: { resolveImagesForCount?: number }
-): Promise<{
+export async function getProjectsForPage(locale: string): Promise<{
   projects: Project[];
   total: number;
 }> {
   const rows = await getProjectRows();
-  const mapped = rows.map((row) => mapProjectRow(row, locale));
-  const resolveCount =
-    options?.resolveImagesForCount ?? PROJECTS_PAGE_SIZE_DESKTOP;
-
-  const withImages = await resolveProjectImages(
-    mapped.slice(0, resolveCount).map((project) => ({
-      id: project.id,
-      url: project.url,
-      image_url: project.image_url,
-    }))
-  );
-
-  const imageById = new Map(
-    withImages.map((project) => [project.id, project.imageSrc])
-  );
-
-  const projects = mapped.map((project) => ({
-    ...project,
-    imageSrc: imageById.get(project.id) ?? PROJECT_PLACEHOLDER_IMAGE,
-  }));
+  const projects = rows.map((row) => mapProjectRow(row, locale));
 
   return {
     projects,
@@ -105,46 +80,45 @@ export async function getProjectsForPage(
 export async function getFeaturedProjects(locale: string): Promise<Project[]> {
   const rows = await getProjectRows();
   const featuredRows = pickFeaturedProjectRows(rows);
-  const mapped = featuredRows.map((row) => mapProjectRow(row, locale));
 
-  const withImages = await resolveProjectImages(
-    mapped.map((project) => ({
-      id: project.id,
-      url: project.url,
-      image_url: project.image_url,
-    }))
-  );
-
-  const imageById = new Map(
-    withImages.map((project) => [project.id, project.imageSrc])
-  );
-
-  return mapped.map((project) => ({
-    ...project,
-    imageSrc: imageById.get(project.id) ?? PROJECT_PLACEHOLDER_IMAGE,
-  }));
+  return featuredRows.map((row) => mapProjectRow(row, locale));
 }
 
-export async function resolveProjectsByIds(
-  locale: string,
-  ids: string[]
-): Promise<Project[]> {
+/**
+ * Resolves each project's preview image (og:image with fallback to the stored
+ * image, then placeholder) and persists it to the `image_url` column using the
+ * service-role client. Intended to run from a trusted backfill/cron job, NOT on
+ * every page render. Returns a per-project summary.
+ */
+export async function refreshProjectImages(): Promise<{
+  updated: number;
+  total: number;
+  results: { id: string; image_url: string }[];
+}> {
   const rows = await getProjectRows();
-  const rowById = new Map(rows.map((row) => [row.id, row]));
+  const admin = createAdminClient();
 
-  const selected = ids
-    .map((id) => rowById.get(id))
-    .filter((row): row is ProjectRow => Boolean(row));
-
-  const mapped = selected.map((row) => mapProjectRow(row, locale));
-
-  return Promise.all(
-    mapped.map(async (project) => ({
-      ...project,
-      imageSrc: await resolveProjectImageUrl({
-        url: project.url,
-        image_url: project.image_url,
-      }),
-    }))
+  const results = await Promise.all(
+    rows.map(async (row) => {
+      const imageUrl = await resolveProjectImageUrl({
+        url: row.url,
+        image_url: row.image_url,
+      });
+      return { id: row.id, image_url: imageUrl };
+    })
   );
+
+  let updated = 0;
+  for (const result of results) {
+    const { error } = await admin
+      .from("projects")
+      .update({ image_url: result.image_url })
+      .eq("id", result.id);
+
+    if (!error) {
+      updated += 1;
+    }
+  }
+
+  return { updated, total: rows.length, results };
 }
