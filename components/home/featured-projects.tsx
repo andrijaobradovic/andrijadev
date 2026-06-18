@@ -17,7 +17,7 @@ export async function FeaturedProjects({ projects }: FeaturedProjectsProps) {
   return (
     <section
       aria-labelledby="featured-projects-title"
-      className="flex flex-col gap-8 py-24"
+      className="flex flex-col gap-8 pt-16 pb-16"
     >
       <ScrollReveal>
         <div className="flex flex-col gap-3 text-left">

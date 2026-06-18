@@ -44,7 +44,7 @@ export async function Footer() {
                 <li key={key}>
                   <Link
                     href={href}
-                    className="nav-link inline-block text-sm text-foreground/80 transition-colors hover:text-foreground"
+                    className="nav-link inline-block text-sm text-foreground/80 transition-colors hover:text-primary"
                   >
                     {t(key)}
                   </Link>

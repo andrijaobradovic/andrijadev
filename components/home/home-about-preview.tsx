@@ -8,15 +8,16 @@ export async function HomeAboutPreview() {
   const t = await getTranslations("home.aboutPreview");
 
   return (
-    <ScrollReveal>
-      <section
-        id="about-preview"
-        aria-labelledby="home-about-title"
-        className="w-full bg-background/60 backdrop-blur-md"
-      >
+    <>
+      <div id="about-preview" className="scroll-mt-16" aria-hidden="true" />
+      <ScrollReveal>
+        <section
+          aria-labelledby="home-about-title"
+          className="w-full bg-background/60 backdrop-blur-md"
+        >
         <div className="mx-auto flex w-[80%] max-w-7xl flex-col items-center gap-8 sm:flex-row sm:items-stretch sm:gap-10">
-          <div className="relative mx-auto w-full max-w-sm shrink-0 sm:mx-0 sm:w-[40%] sm:max-w-none">
-            <div className="relative aspect-[4/5] min-h-[280px] w-full overflow-hidden rounded-lg sm:aspect-auto sm:h-full sm:rounded-none">
+          <div className="relative mx-auto w-full max-w-sm shrink-0 self-stretch pt-[20px] sm:mx-0 sm:w-[40%] sm:max-w-none sm:pt-0">
+            <div className="relative aspect-[4/5] min-h-[280px] w-full overflow-hidden rounded-none sm:aspect-auto sm:h-full">
               <Image
                 src="/selfie.jpg"
                 alt={t("imageAlt")}
@@ -52,7 +53,8 @@ export async function HomeAboutPreview() {
             </div>
           </div>
         </div>
-      </section>
-    </ScrollReveal>
+        </section>
+      </ScrollReveal>
+    </>
   );
 }

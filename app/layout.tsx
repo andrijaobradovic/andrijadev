@@ -1,3 +1,4 @@
+import type { Viewport } from "next";
 import { Geist, Geist_Mono, Raleway, Space_Grotesk } from "next/font/google";
 import { getLocale } from "next-intl/server";
 import { cn } from "@/lib/utils";
@@ -22,6 +23,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+  colorScheme: "dark",
+  themeColor: "#120e1e",
+};
 
 export default async function RootLayout({
   children,

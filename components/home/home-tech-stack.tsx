@@ -4,7 +4,7 @@ import { TechMarquee } from "@/components/about/tech-marquee";
 export function HomeTechStack() {
   return (
     <ScrollReveal delay={100}>
-      <section aria-label="Technologies" className="mt-16">
+      <section aria-label="Technologies" className="pt-16">
         <TechMarquee className="w-full" />
       </section>
     </ScrollReveal>

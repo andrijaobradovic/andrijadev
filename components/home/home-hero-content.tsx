@@ -69,9 +69,17 @@ export function HomeHeroContent({
   }, []);
 
   const scrollToAbout = () => {
-    document
-      .getElementById("about-preview")
-      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const about = document.getElementById("about-preview");
+    if (!about) return;
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    about.scrollIntoView({
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+      block: "start",
+    });
   };
 
   const showProjectsStat = projectsValue !== null && projectsValue > 0;
@@ -80,7 +88,7 @@ export function HomeHeroContent({
     <section
       ref={heroRef}
       aria-labelledby="home-hero-title"
-      className="flex min-h-screen flex-col text-center"
+      className="relative flex min-h-screen flex-col text-center"
     >
       <div className="hero-fade-in flex flex-1 flex-col items-center justify-center">
         <div
@@ -117,52 +125,56 @@ export function HomeHeroContent({
         </div>
       </div>
 
-      <div className="flex flex-col items-center pb-12 sm:pb-16">
-        <div
-          className={cn(
-            "flex items-center",
-            showProjectsStat
-              ? "flex-col gap-6 sm:flex-row sm:gap-0"
-              : "flex-col"
-          )}
-        >
-          <div className="flex flex-col items-center gap-1">
-            <span className="font-heading text-3xl font-bold text-primary sm:text-4xl">
-              {experienceValue}
-            </span>
-            <span className="text-sm text-muted-foreground sm:text-base">
-              {experienceLabel}
-            </span>
+      <div className="pb-12 sm:pb-16">
+        <div className="relative flex w-full items-center justify-center">
+          <div
+            className={cn(
+              "flex items-center",
+              showProjectsStat
+                ? "flex-col gap-6 sm:flex-row sm:gap-0"
+                : "flex-col"
+            )}
+          >
+            <div className="flex flex-col items-center gap-1">
+              <span className="font-heading text-3xl font-bold text-primary sm:text-4xl">
+                {experienceValue}
+              </span>
+              <span className="text-sm text-muted-foreground sm:text-base">
+                {experienceLabel}
+              </span>
+            </div>
+
+            {showProjectsStat ? (
+              <>
+                <div
+                  aria-hidden
+                  className="hidden h-10 w-px bg-primary/40 sm:mx-10 sm:block"
+                />
+                <div className="flex flex-col items-center gap-1">
+                  <span className="font-heading text-3xl font-bold text-primary sm:text-4xl">
+                    {projectsValue}
+                  </span>
+                  <span className="text-sm text-muted-foreground sm:text-base">
+                    {projectsLabel}
+                  </span>
+                </div>
+              </>
+            ) : null}
           </div>
 
-          {showProjectsStat ? (
-            <>
-              <div
-                aria-hidden
-                className="hidden h-10 w-px bg-primary/40 sm:mx-10 sm:block"
-              />
-              <div className="flex flex-col items-center gap-1">
-                <span className="font-heading text-3xl font-bold text-primary sm:text-4xl">
-                  {projectsValue}
-                </span>
-                <span className="text-sm text-muted-foreground sm:text-base">
-                  {projectsLabel}
-                </span>
-              </div>
-            </>
+          {showChevron ? (
+            <button
+              type="button"
+              onClick={scrollToAbout}
+              aria-label={scrollToAboutLabel}
+              className="absolute right-0 top-1/2 -translate-y-1/2 text-primary transition-opacity hover:opacity-100"
+            >
+              <span className="hero-scroll-chevron motion-reduce:transform-none block">
+                <RiArrowDownSLine className="size-8" aria-hidden />
+              </span>
+            </button>
           ) : null}
         </div>
-
-        {showChevron ? (
-          <button
-            type="button"
-            onClick={scrollToAbout}
-            aria-label={scrollToAboutLabel}
-            className="hero-scroll-chevron motion-reduce:transform-none mt-8 text-primary transition-opacity hover:opacity-100"
-          >
-            <RiArrowDownSLine className="size-8" aria-hidden />
-          </button>
-        ) : null}
       </div>
     </section>
   );
