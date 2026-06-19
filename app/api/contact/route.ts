@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
+import { getClientIp, isContactRateLimited } from "@/lib/contact-rate-limit";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -29,37 +30,8 @@ const FIELD_LIMITS = {
   message: 1000,
 } as const;
 
-const RATE_LIMIT_MAX = 5;
-const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
-const rateLimitStore = new Map<string, number[]>();
-
 function getLocale(value: unknown): Locale {
   return value === "sr" ? "sr" : "en";
-}
-
-function getClientIp(request: Request): string {
-  const forwarded = request.headers.get("x-forwarded-for");
-  if (forwarded) {
-    return forwarded.split(",")[0]?.trim() || "unknown";
-  }
-  return request.headers.get("x-real-ip")?.trim() || "unknown";
-}
-
-function isRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const windowStart = now - RATE_LIMIT_WINDOW_MS;
-  const hits = (rateLimitStore.get(ip) ?? []).filter(
-    (timestamp) => timestamp > windowStart
-  );
-
-  if (hits.length >= RATE_LIMIT_MAX) {
-    rateLimitStore.set(ip, hits);
-    return true;
-  }
-
-  hits.push(now);
-  rateLimitStore.set(ip, hits);
-  return false;
 }
 
 export async function POST(request: Request) {
@@ -78,7 +50,7 @@ export async function POST(request: Request) {
   const t = messages[locale];
 
   try {
-    if (isRateLimited(getClientIp(request))) {
+    if (await isContactRateLimited(getClientIp(request))) {
       return NextResponse.json({ error: t.tooMany }, { status: 429 });
     }
 

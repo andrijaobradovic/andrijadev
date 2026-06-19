@@ -47,10 +47,7 @@ function mapProjectRow(row: ProjectRow, locale: string): Project {
 
 export const getProjectRows = cache(async (): Promise<ProjectRow[]> => {
   const supabase = await getSupabaseClient();
-  const { data, error } = await supabase
-    .from("projects")
-    .select("*")
-    .order("created_at", { ascending: false });
+  const { data, error } = await supabase.from("projects").select("*");
 
   if (error) {
     throw new Error(error.message);
