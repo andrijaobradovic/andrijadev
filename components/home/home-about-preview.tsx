@@ -40,7 +40,7 @@ export async function HomeAboutPreview() {
             >
               {t("title")}
             </h2>
-            <p className="text-base leading-relaxed text-muted-foreground">
+            <p className="whitespace-pre-line text-base leading-relaxed text-muted-foreground">
               {t("description")}
             </p>
             <div className="pb-[20px]">

@@ -23,7 +23,7 @@
       "titleAndrija": "Andrija",
       "titleDev": "Dev",
       "subtitle": "Andrija Obradovic - Web Developer",
-      "description": "I help businesses and individuals turn their ideas into modern, high-performance web applications. From websites to full-stack apps, I focus on clean code, clear communication, and reliable delivery.",
+      "description": "I create modern web applications using the latest technologies, artificial intelligence, and cloud services. From simple websites to complex full-stack solutions, I build products that are fast, optimized and designed for future growth.",
       "contact": "Contact me",
       "experienceValue": "1+",
       "experienceLabel": "{count, plural, one {year of experience} other {years of experience}}",
@@ -32,7 +32,7 @@
     },
     "aboutPreview": {
       "title": "About me",
-      "description": "I am a graduate mathematician from the Faculty of Mathematics, University of Belgrade. I build websites and applications using Next.js, React, and TypeScript.",
+      "description": "I am a graduate mathematician and web developer.\nI develop modern web applications and digital products, from idea to finished solution. I work with React, Next.js, and Node.js, while using Supabase (PostgreSQL, Auth, Storage, and API) and other cloud services for the backend. I also integrate AI tools into my development process to speed up workflows and improve application functionality.",
       "cta": "More about me",
       "imageAlt": "Andrija Obradovic - web developer"
     },
@@ -55,11 +55,12 @@
       "greeting": "Hello, I'm",
       "name": "Andrija",
       "subtitle1": "I help businesses bring their digital ideas to life.",
-      "subtitle2": "AndrijaDev is my freelance brand for modern web applications."
+      "subtitle2": "Turning your ideas into web applications."
     },
     "bio": {
-      "paragraph1": "I am a graduate mathematician from the Faculty of Mathematics, University of Belgrade. I build websites and applications using Next.js, React, and TypeScript.",
-      "paragraph2": "I value clear communication and meeting deadlines. After launch, I remain available for maintenance and support."
+      "paragraph1": "I hold a degree in Mathematics from the Faculty of Mathematics in Belgrade. The analytical approach I developed during my studies is something I now apply in web development. I build websites and web applications for clients who need reliable and modern solutions.",
+      "paragraph2": "Through the <brand>AndrijaDev</brand> brand, I work with entrepreneurs, small and large businesses on projects of various scopes, ranging from presentation websites to more complex applications with user accounts and databases. I focus on security and performance.",
+      "paragraph3": "After launch, I remain available for maintenance and further development, as I understand that a digital product continues to evolve immediately after deployment."
     },
     "tech": {
       "title": "Technologies I use",
@@ -136,36 +137,36 @@
         "title": "Websites",
         "short": "Professional, responsive websites built with modern technologies to represent your brand and engage your audience.",
         "detail": {
-          "p1": "A well-crafted website is the foundation of your digital presence. I build responsive, fast-loading websites that communicate your brand clearly and convert visitors into customers.",
-          "p2": "Each project is developed using Next.js, React, and TypeScript, ensuring clean code, excellent performance, and a structure that scales as your business grows. From landing pages to multi-page corporate sites, every detail is handled with precision.",
-          "p3": "Whether you need a brand-new website or a complete redesign of an existing one, I work closely with you from concept to launch to deliver a result that meets your business objectives."
+          "p1": "A website is the ideal solution for companies, entrepreneurs, and individuals who need a professional online presence without complex functionality or advanced systems. This type of website is designed for projects that do not require sophisticated implementations such as user registration and login systems, user accounts, or advanced business processes. The goal is to help visitors quickly find the information they need and easily get in touch with you.",
+          "p2": "I create modern, responsive, and optimized websites that effectively showcase your brand, services, and products while making a strong first impression on potential clients. My focus is on performance, clarity, and delivering an excellent user experience across all devices.",
+          "p3": "Whether you need a portfolio website, a company presentation website, or a multi-page informational website, every project is developed with a carefully crafted design that best represents your business online."
         }
       },
       "web-apps": {
         "title": "Web Applications",
         "short": "Custom web applications tailored to your business processes and needs, built with optimized performance, security, and long-term maintainability.",
         "detail": {
-          "p1": "When your business requires more than a static website, I develop custom web applications designed around your specific workflows and requirements. From internal tools to customer-facing platforms, every solution is built to solve real problems.",
-          "p2": "Applications are developed with Next.js, React, TypeScript, and Supabase, providing a robust full-stack foundation. I focus on intuitive user interfaces, reliable data handling, and architecture that remains maintainable as features evolve.",
-          "p3": "Throughout development, you receive regular progress updates and the flexibility to refine requirements. The result is a production-ready application deployed with performance optimization and ongoing support available after launch."
+          "p1": "When your project requires more than a traditional website, I develop custom web applications designed for complex business processes and advanced functionality. Web applications allow users to interact with the system through account registration and authentication, as well as create, view, update, and delete data. These solutions are ideal for projects that require larger databases, process automation, and advanced business logic.",
+          "p2": "I build web applications using modern technologies such as Next.js, React, TypeScript, and Supabase, with a strong focus on security, performance, and scalability. Every system is designed to be user-friendly, reliable, and flexible enough to support future growth and new features.",
+          "p3": "Whether you need an e-commerce platform, an online learning platform, a booking system, or any other type of web application, each project is developed according to your specific requirements to deliver a solution that effectively supports your business and provides an excellent user experience. After the project is completed, I can continue to provide maintenance, improvements, and technical support by prior agreement, ensuring that your application remains secure, stable, and ready for future growth."
         }
       },
       "design": {
         "title": "Web Design",
         "short": "Clean, modern interface design of web presentation aligned with the needs of your brand, focused on usability and a professional visual impression.",
         "detail": {
-          "p1": "Strong design is essential for building trust and guiding users toward action. I create interface designs that balance aesthetics with usability, ensuring every page serves a clear purpose within your digital strategy.",
-          "p2": "Design work covers layout structure, typography, color systems, and component styling consistent with your brand. Prototypes and mockups are prepared before development begins, so you can review and approve the direction early in the process.",
-          "p3": "The final design integrates seamlessly into the development phase, resulting in a cohesive product where visual quality matches technical execution. Every interface is crafted to leave a professional, lasting impression on your audience."
+          "p1": "Design is much more than just visual appearance, it plays a key role in how users perceive your brand and make decisions while interacting with your website. The first impression is formed within seconds, which is why a professional and carefully crafted design can significantly increase user trust and their willingness to engage.",
+          "p2": "Every color, shape, and visual element evokes specific emotions and influences user behavior. With the right choice of colors, typography, layout structure, and visual hierarchy, it is possible to guide user attention, improve content clarity, and create an experience that leaves a positive and professional impression. That is why it is essential that all elements are aligned with the brand identity and the goals of the website itself.",
+          "p3": "To ensure that your project makes the best possible impact, I offer UI/UX design services tailored to your needs. Whether you need a complete design for a new website, a redesign of an existing solution, or prototyping before development, the goal is to create a modern and functional interface that attracts users and contributes to the success of your business."
         }
       },
       "maintenance": {
         "title": "Maintenance",
         "short": "Reliable support that keeps your website or application secure, up to date, and performing at its best.",
         "detail": {
-          "p1": "Launching a product is only the beginning. I provide structured maintenance services to ensure your website or application remains secure, performant, and aligned with current standards long after deployment.",
-          "p2": "Maintenance covers dependency updates, security patches, performance monitoring, bug fixes, and content adjustments as needed. Proactive care prevents small issues from becoming costly problems and keeps your platform running smoothly.",
-          "p3": "I remain available as a dedicated technical partner, responding to issues promptly and advising on improvements when opportunities arise. Your digital product stays in capable hands so you can focus on your core business."
+          "p1": "Website or web application maintenance is essential for long-term stability, security, and performance. Modern technologies are constantly evolving, and regular updates bring new features, performance improvements, as well as fixes for existing bugs and security vulnerabilities. Without continuous maintenance, any digital product gradually becomes outdated and potentially exposed to risks.",
+          "p2": "That is why it is important to keep track of changes in libraries, frameworks, and system dependencies, as well as regularly optimize code and infrastructure. This approach ensures that your website or application remains fast, secure, and compatible with the latest standards and technologies, while maintaining a stable user experience.",
+          "p3": "As part of my services, I offer professional maintenance and technical support, including regular updates, bug fixes, security patches, and continuous system improvements to ensure your project always runs reliably and is ready for future growth."
         }
       },
       "new-features": {
@@ -173,7 +174,7 @@
         "short": "Seamless integration of new functionality into your existing website or application without disrupting current operations.",
         "detail": {
           "p1": "As your business evolves, your digital platform must evolve with it. I integrate new features into existing websites and applications, extending functionality while preserving stability and user experience.",
-          "p2": "Before any code is written, I assess the current architecture and plan the integration to minimize risk. New features are developed following the same quality standards as the original build, with thorough testing before deployment.",
+          "p2": "Before any code is written, I assess the current architecture and plan the integration to minimize risk. New features are developed following the same standards as the original build, with thorough testing before deployment.",
           "p3": "From contact forms and user dashboards to third-party API integrations and payment systems, each addition is implemented cleanly and documented for future reference. Your platform grows with your business without unnecessary complexity."
         }
       },
@@ -181,9 +182,9 @@
         "title": "Custom Solutions",
         "short": "Technical solutions for unique requirements that fall outside standard service categories.",
         "detail": {
-          "p1": "Not every project fits a predefined category. For unique challenges — whether a specialized integration, a hybrid platform, or a technical consultation — I provide custom solutions designed specifically around your situation.",
-          "p2": "The process begins with a thorough assessment of your requirements, constraints, and objectives. Based on that analysis, I propose an approach that balances feasibility, timeline, and long-term value for your organization.",
-          "p3": "Custom engagements draw on the full breadth of my technical expertise across frontend, backend, design, and deployment. Whatever the scope, you receive the same commitment to quality, communication, and professional delivery."
+          "p1": "Not every project has to fit into predefined service categories. If you have a unique idea, a specific problem, or a project that does not fall into standard solutions, it is possible to develop a fully customized solution tailored to your needs.",
+          "p2": "The process begins when you send your idea, requirements, or a description of the problem you want to solve through the contact form. After that, I analyze the possibilities, propose a technical approach, and together we define the best way to bring it to life.",
+          "p3": "In this way, every project becomes a collaborative process where an idea is transformed into a concrete digital solution. Regardless of complexity, the goal is to deliver a functional, high-quality, and reliable product that fully matches your vision."
         }
       }
     }

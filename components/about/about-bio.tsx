@@ -12,7 +12,14 @@ export async function AboutBio() {
         {t("paragraph1")}
       </p>
       <p className="text-base leading-relaxed text-muted-foreground">
-        {t("paragraph2")}
+        {t.rich("paragraph2", {
+          brand: (chunks) => (
+            <span className="text-primary">{chunks}</span>
+          ),
+        })}
+      </p>
+      <p className="text-base leading-relaxed text-muted-foreground">
+        {t("paragraph3")}
       </p>
       <OutlineFillButton asChild className="sm:w-auto">
         <Link href="/services">{tNav("services")}</Link>

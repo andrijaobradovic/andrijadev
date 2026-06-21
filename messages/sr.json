@@ -23,7 +23,7 @@
       "titleAndrija": "Andrija",
       "titleDev": "Dev",
       "subtitle": "Andrija Obradovic - Web Developer",
-      "description": "Pomažem biznisima i pojedincima da pretvore svoje ideje u moderne, visokoperformansne web aplikacije. Od sajtova do full-stack rešenja, fokusiram se na čist kod, jasnu komunikaciju i pouzdanu isporuku.",
+      "description": "Kreiram moderne web aplikacije koristeći najnovije tehnologije, veštačku inteligenciju i cloud servise. Od jednostavnih sajtova do kompleksnih full-stack rešenja, razvijam proizvode koji su brzi, optimizovani i spremni za budući rast.",
       "contact": "Kontaktiraj me",
       "experienceValue": "1+",
       "experienceLabel": "godina iskustva",
@@ -32,13 +32,13 @@
     },
     "aboutPreview": {
       "title": "O meni",
-      "description": "Diplomirani sam matematičar sa Matematičkog fakulteta, Univerziteta u Beogradu. Gradim web sajtove i aplikacije koristeći Next.js, React i TypeScript.",
+      "description": "Diplomirani sam matematičar i web developer.\nBavim se razvojem modernih web aplikacija i digitalnih proizvoda, od ideje do gotovog rešenja. Radim sa React-om, Next.js-om i Node.js-om, dok za backend koristim Supabase (PostgreSQL, Auth, Storage i API) i druge cloud servise. U razvoj uključujem i AI alate za ubrzanje procesa i poboljšanje funkcionalnosti aplikacija.",
       "cta": "Više o meni",
       "imageAlt": "Andrija Obradovic - web developer"
     },
     "featured": {
       "title": "Istaknuti projekti",
-      "subtitle": "Izbor nedavnih radova izrađenih za klijente i lične projekte.",
+      "subtitle": "Izbor nedavnih radova izrađenih za klijente i lični projekte.",
       "viewAll": "Pogledaj projekte",
       "empty": "Projekti uskoro"
     }
@@ -55,11 +55,12 @@
       "greeting": "Zdravo, ja sam",
       "name": "Andrija",
       "subtitle1": "Pomažem biznisima da ostvare svoje digitalne ideje.",
-      "subtitle2": "AndrijaDev je moj freelance brend za moderne web aplikacije."
+      "subtitle2": "Pretvaram Vaše ideje u web aplikacije."
     },
     "bio": {
-      "paragraph1": "Diplomirani sam matematičar sa Matematičkog fakulteta, Univerziteta u Beogradu. Gradim web sajtove i aplikacije koristeći Next.js, React i TypeScript.",
-      "paragraph2": "Cenim jasnu komunikaciju i poštovanje rokova. Nakon lansiranja ostajem dostupan za održavanje i podršku."
+      "paragraph1": "Diplomirani sam matematičar sa Matematičkog fakulteta u Beogradu. Analitički pristup, koji sam stekao na fakultetu, danas primenjujem u web developmentu. Razvijam sajtove i web aplikacije za klijente koji žele pouzdano i moderno rešenje.",
+      "paragraph2": "Kroz <brand>AndrijaDev</brand> brend radim sa preduzetnicima, malim i velikim biznisima na projektima različitog obima, od prezentacionih sajtova do kompleksnijih aplikacija sa korisničkim nalozima i bazama podataka. Akcenat stavljam na sigurnost performanse.",
+      "paragraph3": "Nakon lansiranja ostajem dostupan za održavanje i dalji razvoj, jer znam da digitalni proizvod živi i menja se odmah posle lansiranja."
     },
     "tech": {
       "title": "Tehnologije koje koristim",
@@ -83,7 +84,7 @@
         },
         "plan": {
           "title": "Plan",
-          "description": "Definišemo arhitekturu i plan projekta sa fokusom na kvalitet koda, održivost i performanse koje će Vaš proizvod raditi dugoročno i u skladu sa Vašim ciljevima."
+          "description": "Definišemo arhitekturu i plan projekta sa fokusom na kvalitet koda, održivost i performanse uz koje će Vaš proizvod raditi dugoročno i u skladu sa Vašim ciljevima."
         },
         "development": {
           "title": "Razvoj",
@@ -136,36 +137,36 @@
         "title": "Web sajtovi",
         "short": "Profesionalni, responzivni sajtovi izgrađeni modernim tehnologijama koji predstavljaju Vaš brend i privlače publiku.",
         "detail": {
-          "p1": "Kvalitetan web sajt je osnova Vašeg digitalnog prisustva. Gradim responzivne, brze sajtove koji jasno komuniciraju Vaš brend i pretvaraju posetioce u klijente.",
-          "p2": "Svaki projekat razvijam koristeći Next.js, React i TypeScript, uz čist kod, odlične performanse i strukturu koja raste zajedno sa Vašim biznisom. Od landing stranica do korporativnih sajtova sa više stranica — svaki detalj se obrađuje precizno.",
-          "p3": "Bilo da Vam treba potpuno nov sajt ili kompletan redizajn postojećeg, radim blisko sa Vama od koncepta do lansiranja kako bismo dostavili rezultat koji ispunjava poslovne ciljeve."
+          "p1": "Web sajt je idealno rešenje za kompanije, preduzetnike i pojedince kojima je potrebna profesionalna online prezentacija bez složenih funkcionalnosti i naprednih sistema. Ova vrsta sajta namenjena je projektima koji ne zahtevaju kompleksne implementacije poput sistema za registraciju i prijavu korisnika, korisničkih naloga ili naprednih poslovnih procesa. Cilj je da Vaši posetioci brzo pronađu potrebne informacije i jednostavno stupe u kontakt sa Vama.",
+          "p2": "Izrađujem moderne, responzivne i optimizovane sajtove koji jasno predstavljaju Vaš brend, usluge i proizvode, ostavljajući snažan prvi utisak na potencijalne klijente. Fokusiram se na optimizaciju, preglednost i kvalitetno korisničko iskustvo na svim uređajima.",
+          "p3": "Bilo da Vam je potreban portfolio, prezentacija firme ili sajta sa više informativnih stranica, svaki projekat razvijam sa osmišljenim dizajnom koji najbolje predstavlja Vaše poslovanje na internetu."
         }
       },
       "web-apps": {
         "title": "Web aplikacije",
         "short": "Prilagođene web aplikacije po Vašim poslovnim procesima i potrebama, izgrađene uz optimizovane performanse, bezbednost i dugoročnu održivost.",
         "detail": {
-          "p1": "Kada Vašem biznisu treba više od statičnog sajta, razvijam prilagođene web aplikacije dizajnirane oko Vaših specifičnih procesa i zahteva. Od internih alata do platformi za klijente — svako rešenje rešava stvarne probleme.",
-          "p2": "Aplikacije se razvijaju uz Next.js, React, TypeScript i Supabase, pružajući robusnu full-stack osnovu. Fokusiram se na intuitivan korisnički interfejs, pouzdano upravljanje podacima i arhitekturu koja ostaje održiva kako se funkcije proširuju.",
-          "p3": "Tokom razvoja dobijate redovna ažuriranja o napretku i fleksibilnost za usklađivanje zahteva. Rezultat je aplikacija spremna za produkciju, uz optimizaciju performansi i podršku i nakon lansiranja."
+          "p1": "Kada Vašem projektu treba više od klasične web prezentacije, razvijam prilagođene web aplikacije namenjene složenijim poslovnim procesima i naprednim funkcionalnostima. Web aplikacije omogućavaju korisnicima interakciju sa sistemom kroz registraciju i prijavu naloga, kao i rad sa podacima kroz njihovo kreiranje, pregled, izmenu i brisanje. Ovakva rešenja idealna su za projekte koji zahtevaju veću bazu podataka, automatizaciju procesa i naprednu logiku poslovanja.",
+          "p2": "Web aplikacije razvijam koristeći moderne tehnologije poput Next.js, React, TypeScript i Supabase, uz poseban fokus na sigurnost, performanse i skalabilnost. Svaki sistem je dizajniran da bude lak za korišćenje, pouzdan u radu i fleksibilan da podrži buduća proširenja i nove funkcionalnosti.",
+          "p3": "Bilo da Vam je potrebna online prodavnica, platforma za kurseve, sistem za rezervacije ili bilo koja druga web aplikacija, svaki projekat razvijam prema konkretnim zahtevima kako biste dobili aplikaciju koja efikasno podržava Vaše poslovanje i pruža kvalitetno korisničko iskustvo. Nakon završetka projekta, uz prethodni dogovor, mogu nastaviti sa održavanjem, unapređenjem i tehničkom podrškom kako bi Vaša aplikacija ostala bezbedna, stabilna i spremna za budući rast."
         }
       },
       "design": {
         "title": "Web dizajn",
         "short": "Čist, moderan dizajn web prezentacija usklađen sa potrebama Vašeg brenda, fokusiran na upotrebljivost i profesionalan vizuelni utisak.",
         "detail": {
-          "p1": "Kvalitetan dizajn je ključan za izgradnju poverenja i usmeravanje korisnika ka akciji. Kreiram dizajn interfejsa koji balansira estetiku i upotrebljivost, uz jasan cilj svake stranice u okviru Vaše digitalne strategije.",
-          "p2": "Dizajn obuhvata strukturu layouta, tipografiju, sistem boja i stilizaciju komponenti u skladu sa brendom. Prototipi i mockupi se pripremaju pre početka razvoja, kako biste pravovremeno pregledali i odobrili pravac.",
-          "p3": "Konačni dizajn se besprekorno integriše u fazu razvoja, dajući kohezivan proizvod u kome vizuelni kvalitet prati tehničku izvedbu. Svaki interfejs ostavlja profesionalan i trajan utisak na publiku."
+          "p1": "Dizajn je mnogo više od lepog izgleda, on igra ključnu ulogu u načinu na koji korisnici doživljavaju Vaš brend i donose odluke tokom korišćenja sajta. Prvi utisak se stvara u svega nekoliko sekundi, zbog čega profesionalan i pažljivo osmišljen dizajn može značajno povećati poverenje korisnika i njihovu spremnost na interakciju.",
+          "p2": "Svaka boja, oblik i vizuelni element izazivaju određene emocije i utiču na ponašanje posetilaca. Pravilnim izborom boja, tipografije, rasporeda elemenata i vizuelne hijerarhije moguće je usmeriti pažnju korisnika, poboljšati preglednost sadržaja i stvoriti iskustvo koje ostavlja pozitivan i profesionalan utisak. Zato je važno da svi elementi budu usklađeni sa identitetom brenda i ciljevima samog sajta.",
+          "p3": "Kako bih obezbedio da Vaš projekat ostavi najbolji mogući utisak, nudim usluge UI/UX dizajna prilagođene Vašim potrebama. Bilo da Vam je potreban kompletan dizajn novog sajta, redizajn postojećeg rešenja ili izrada prototipa pre razvoja, cilj je kreiranje modernog i funkcionalnog interfejsa koji privlači korisnike i doprinosi uspehu Vašeg poslovanja."
         }
       },
       "maintenance": {
         "title": "Održavanje",
         "short": "Pouzdana podrška koja održava Vaš sajt ili aplikaciju bezbednim, ažuriranim i performantnim.",
         "detail": {
-          "p1": "Lansiranje proizvoda je tek početak. Pružam strukturisane usluge održavanja kako bi Vaš sajt ili aplikacija ostali bezbedni, performantni i usklađeni sa aktuelnim standardima dugo nakon deploya.",
-          "p2": "Održavanje obuhvata ažuriranje zavisnosti, sigurnosne zakrpe, praćenje performansi, ispravke grešaka i prilagođavanje sadržaja po potrebi. Proaktivna briga sprečava da manji problemi postanu skupi, a platforma radi besprekorno.",
-          "p3": "Ostajem dostupan kao posvećeni tehnički partner, brzo reagujem na probleme i savetujem o poboljšanjima kada se ukaže prilika. Vaš digitalni proizvod je u pouzdanim rukama, a Vi se fokusirate na svoj biznis."
+          "p1": "Održavanje sajta ili web aplikacije je ključno za dugoročnu stabilnost, bezbednost i performanse sistema. Savremene tehnologije se konstantno razvijaju, a redovna ažuriranja donose nove funkcionalnosti, poboljšanja performansi i ispravke postojećih bugova i sigurnosnih propusta. Bez kontinuiranog održavanja, svaki digitalni proizvod vremenom postaje zastareo i potencijalno ranjiv.",
+          "p2": "Zato je važno pratiti promene u bibliotekama, framework-ovima i sistemskim zavisnostima, kao i redovno optimizovati kod i infrastrukturu. Ovakav pristup obezbeđuje da Vaš sajt ili aplikacija ostanu brzi, sigurni i kompatibilni sa najnovijim standardima i tehnologijama, uz stabilno korisničko iskustvo.",
+          "p3": "U okviru svojih usluga nudim profesionalno održavanje i tehničku podršku, uključujući redovna ažuriranja, otklanjanje grešaka, sigurnosne zakrpe i kontinuirano unapređenje sistema kako bi Vaš projekat uvek radio pouzdano i bio spreman za dalji rast."
         }
       },
       "new-features": {
@@ -173,17 +174,17 @@
         "short": "Besprekorna integracija novih funkcionalnosti u postojeći sajt ili aplikaciju, bez narušavanja trenutnog rada.",
         "detail": {
           "p1": "Kako se Vaš biznis razvija, digitalna platforma mora da raste sa njim. Integrišem nove funkcije u postojeće sajtove i aplikacije, proširujući mogućnosti uz očuvanje stabilnosti i korisničkog iskustva.",
-          "p2": "Pre pisanja koda procenjujem postojeću arhitekturu i planiram integraciju kako bih minimizovao rizik. Nove funkcije se razvijaju po istim standardima kvaliteta kao i originalni projekat, uz temeljno testiranje pre objave.",
-          "p3": "Od kontakt formi i korisničkih panela do integracija sa API-jima i platnih sistema — svako proširenje se implementira čisto i dokumentuje za buduću referencu. Platforma raste sa biznisom bez nepotrebne složenosti."
+          "p2": "Pre pisanja koda procenjujem postojeću arhitekturu i planiram integraciju kako bih smanjio rizik. Nove funkcije se razvijaju po istim standardima kao i originalni projekat, uz temeljno testiranje pre objave.",
+          "p3": "Od kontakt formi i korisničkih panela do integracija sa API-jima i platnih sistema, svako proširenje se implementira čisto i dokumentuje za buduću referencu. Platforma raste sa biznisom bez nepotrebne složenosti."
         }
       },
       "custom-solutions": {
         "title": "Prilagođena rešenja",
         "short": "Tehnička rešenja za jedinstvene zahteve koji ne spadaju u standardne kategorije usluga.",
         "detail": {
-          "p1": "Ne svaki projekat odgovara unapred definisanoj kategoriji. Za jedinstvene izazove — bilo specijalizovanu integraciju, hibridnu platformu ili tehničko savetovanje — pružam prilagođena rešenja dizajnirana tačno za Vašu situaciju.",
-          "p2": "Proces počinje detaljnom procenom zahteva, ograničenja i ciljeva. Na osnovu te analize predlažem pristup koji balansira izvodljivost, rokove i dugoročnu vrednost za Vašu organizaciju.",
-          "p3": "Prilagođeni angažmani koriste celokupno tehničko znanje iz frontenda, backenda, dizajna i deploya. Bez obzira na obim, dobijate istu posvećenost kvalitetu, komunikaciji i profesionalnoj isporuci."
+          "p1": "Ne mora svaki projekat da se uklopi u unapred definisane usluge. Ako imate jedinstvenu ideju, specifičan problem ili projekat koji ne spada u standardne kategorije, moguće je razviti potpuno prilagođeno rešenje u skladu sa Vašim potrebama.",
+          "p2": "Proces počinje time što mi kroz kontakt formu pošaljete Vašu ideju, zahtev ili opis problema koji želite da rešite. Nakon toga analiziram mogućnosti, predlažem tehnički pristup i zajedno definišemo najbolji način realizacije.",
+          "p3": "Na ovaj način svaki projekat postaje zajednički proces u kojem se ideja pretvara u konkretno digitalno rešenje. Bez obzira na kompleksnost, cilj je da dobijete funkcionalan, kvalitetan i pouzdan proizvod koji u potpunosti odgovara Vašoj viziji."
         }
       }
     }
@@ -195,7 +196,7 @@
     },
     "hero": {
       "title": "Projekti",
-      "subtitle": "Portfolio sajtova i web aplikacija isporučenih za klijente i lične projekte."
+      "subtitle": "Portfolio sajtova i web aplikacija isporučenih za klijente i lični projekti."
     },
     "grid": {
       "heading": "Svi projekti",
@@ -245,7 +246,7 @@
       "messagePlaceholder": "Kako mogu da pomognem?",
       "submit": "Pošalji poruku",
       "sending": "Slanje...",
-      "privacy": "Vaši podaci se koriste isključivo za odgovor na vaš upit.",
+      "privacy": "Vaši podaci se koriste isključivo za odgovor na Vaš upit.",
       "characters": "{count} / {max}",
       "success": "Vaša poruka je uspešno poslata.",
       "errors": {
