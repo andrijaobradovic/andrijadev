@@ -7,7 +7,7 @@ export async function AboutBio() {
   const tNav = await getTranslations("nav");
 
   return (
-    <section className="space-y-4">
+    <section className="space-y-4 text-center sm:text-left">
       <p className="text-base leading-relaxed text-muted-foreground">
         {t("paragraph1")}
       </p>
