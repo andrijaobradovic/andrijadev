@@ -88,10 +88,10 @@ export async function POST(request: Request) {
     }
 
     const { error } = await resend.emails.send({
-      from: "Kontakt forma <onboarding@resend.dev>",
+      from: "AndrijaDev <no-reply@andrijadev.com>",
       to: process.env.CONTACT_TO_EMAIL!,
       replyTo: email,
-      subject: `[andrija.dev] ${subject}`,
+      subject: ` ${subject}`,
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
     });
 
