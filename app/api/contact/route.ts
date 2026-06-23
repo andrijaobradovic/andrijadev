@@ -30,6 +30,22 @@ const FIELD_LIMITS = {
   message: 1000,
 } as const;
 
+const FROM_EMAIL =
+  process.env.CONTACT_FROM_EMAIL ?? "AndrijaDev <info@andrijadev.com>";
+
+const autoReply = {
+  en: {
+    subject: "We received your message | AndrijaDev",
+    text: (name: string) =>
+      `Dear ${name},\n\nYour message has been successfully received. I will get back to you shortly.\n\nBest regards,\nAndrijaDev`,
+  },
+  sr: {
+    subject: "Primili smo Vašu poruku | AndrijaDev",
+    text: () =>
+      `Poštovani,\n\nVaša poruka je uspešno primljena. Uskoro ću Vam odgovoriti.\n\nSrdačan pozdrav,\nAndrijaDev`,
+  },
+} as const;
+
 function getLocale(value: unknown): Locale {
   return value === "sr" ? "sr" : "en";
 }
@@ -87,15 +103,27 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: t.tooLong }, { status: 400 });
     }
 
-    const { error } = await resend.emails.send({
-      from: "AndrijaDev <no-reply@andrijadev.com>",
+    const { error: notifyError } = await resend.emails.send({
+      from: FROM_EMAIL,
       to: process.env.CONTACT_TO_EMAIL!,
       replyTo: email,
-      subject: ` ${subject}`,
+      subject: `[andrijadev.com] ${subject}`,
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
     });
 
-    if (error) {
+    if (notifyError) {
+      return NextResponse.json({ error: t.generic }, { status: 500 });
+    }
+
+    const reply = autoReply[locale];
+    const { error: autoReplyError } = await resend.emails.send({
+      from: FROM_EMAIL,
+      to: email,
+      subject: reply.subject,
+      text: reply.text(name),
+    });
+
+    if (autoReplyError) {
       return NextResponse.json({ error: t.generic }, { status: 500 });
     }
 
