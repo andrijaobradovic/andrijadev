@@ -107,7 +107,7 @@ export async function POST(request: Request) {
       from: FROM_EMAIL,
       to: process.env.CONTACT_TO_EMAIL!,
       replyTo: email,
-      subject: `[andrijadev.com] ${subject}`,
+      subject: `${subject}`,
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
     });
 

@@ -40,7 +40,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       className={cn(
-        "h-full",
+        "min-h-dvh",
         "antialiased",
         geistSans.variable,
         geistMono.variable,
@@ -49,7 +49,7 @@ export default async function RootLayout({
         spaceGroteskHeading.variable
       )}
     >
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-dvh flex-col">{children}</body>
     </html>
   );
 }

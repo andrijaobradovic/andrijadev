@@ -149,6 +149,13 @@
   }
   html {
     @apply font-sans;
+    background-color: #0e0c14;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  body {
+    background-attachment: scroll;
   }
 }
 
