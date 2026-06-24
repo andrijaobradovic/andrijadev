@@ -7,6 +7,7 @@ import { AboutProcess } from "@/components/about/about-process";
 import { AboutTechStack } from "@/components/about/about-tech-stack";
 import { PersonJsonLd } from "@/components/about/person-jsonld";
 import { ScrollReveal } from "@/components/about/scroll-reveal";
+import { createPageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -16,10 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about.metadata" });
 
-  return {
+  return createPageMetadata({
+    locale,
+    path: "/about",
     title: t("title"),
     description: t("description"),
-  };
+  });
 }
 
 export default async function AboutPage({ params }: Props) {

@@ -133,10 +133,15 @@ Logika izbora slike za karticu (po prioritetu):
 ## 8. SEO
 
 - Lokalizovani `metadata` (title/description) po stranici, na oba jezika.
-- `app/sitemap.ts` i `app/robots.ts` (automatski generisani).
-- Open Graph + Twitter Card meta + generisana OG slika sajta.
-- `hreflang` alternativni linkovi (EN/SR).
-- JSON-LD (`Person` / `Organization`) za rich rezultate.
+- `app/sitemap.ts` i `app/robots.ts` — automatski generisani (`/sitemap.xml`, `/robots.txt`).
+- Open Graph + Twitter Card meta + OG slika (`/public/og-image.png`).
+- `hreflang` alternativni linkovi (EN/SR) i `x-default` na EN verziju, kroz `metadata.alternates`.
+- Canonical URL po stranici (`lib/seo.ts` → `createPageMetadata`).
+- JSON-LD: `Organization` + `WebSite` (home), `Person` (about), `ItemList` (services), `FAQPage` (services), `ContactPage` (contact).
+- FAQ sekcija na Services stranici (staticki prevodi u `messages/`).
+- Blog ruta postoji ali je `noindex` dok nema sadrzaja; ukljucena u sitemap.
+- Preview/staging deploy (`VERCEL_ENV !== production`) koristi `noindex`.
+- Nakon deploy-a: Google Search Console verifikacija (DNS TXT) i submit `https://andrijadev.com/sitemap.xml`.
 
 ## 9. Analitika i pravno
 

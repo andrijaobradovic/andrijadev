@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "AndrijaDev - Web Developer",
-    "description": "Turning your ideas into web applications. Professional web development, design, and maintenance services."
+    "description": "Turning your ideas into web applications. Website and web app development in Belgrade, Next.js, React, and Supabase. Contact me for a free consultation."
   },
   "nav": {
     "home": "Home",
@@ -23,7 +23,7 @@
       "titleAndrija": "Andrija",
       "titleDev": "Dev",
       "subtitle": "Andrija Obradovic - Web Developer",
-      "description": "I create modern web applications using the latest technologies, artificial intelligence, and cloud services. From simple websites to complex full-stack solutions, I build products that are fast, optimized and designed for future growth.",
+      "description": "I create modern web applications using the latest technologies and cloud services. From simple websites to complex full-stack solutions, I build products that are fast, optimized and designed for future growth.",
       "contact": "Contact me",
       "experienceValue": "1+",
       "experienceLabel": "{count, plural, one {year of experience} other {years of experience}}",
@@ -44,11 +44,12 @@
     }
   },
   "blog": {
-    "title": "Blog"
+    "title": "Blog",
+    "description": "News from the world of web development."
   },
   "about": {
     "metadata": {
-      "title": "About | AndrijaDev",
+      "title": "About - Andrija Obradovic | AndrijaDev",
       "description": "Professional web development, design, and maintenance. Meet the developer behind the AndrijaDev brand."
     },
     "hero": {
@@ -104,7 +105,7 @@
   },
   "services": {
     "metadata": {
-      "title": "Services | Websites, Apps, Design - AndrijaDev",
+      "title": "Services | AndrijaDev",
       "description": "Professional web development services including websites, web applications, design, maintenance, new features, and custom solutions."
     },
     "hero": {
@@ -120,6 +121,31 @@
     },
     "process": {
       "title": "From idea to project"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": {
+        "cost": {
+          "question": "How much does website development cost?",
+          "answer": "Pricing depends on project scope — number of pages, features, design, and integrations. After a brief discussion about your needs, you receive a clear quote tailored to your project."
+        },
+        "timeline": {
+          "question": "How long does website development take?",
+          "answer": "Simpler websites are usually ready in 2–4 weeks, while more complex web applications can take several months. The exact timeline is defined upfront, based on scope and your deadlines."
+        },
+        "mobile": {
+          "question": "Will the site work well on mobile phones?",
+          "answer": "Yes. All websites are built responsively — they adapt to phones, tablets, and desktops, with a focus on speed and readability."
+        },
+        "content": {
+          "question": "Can I update the website content myself?",
+          "answer": "It depends on the project. For simpler sites, I can set up a solution that lets you make changes on your own; for more complex applications, updates are handled as agreed, with clear documentation."
+        },
+        "support": {
+          "question": "Do you offer support and maintenance after launch?",
+          "answer": "Yes. After launch, I remain available for maintenance, updates, security patches, and further development — by agreement, according to your needs."
+        }
+      }
     },
     "cta": {
       "ready": "Ready to start?",

@@ -3,6 +3,7 @@ import { FeaturedProjects } from "@/components/home/featured-projects";
 import { HomeAboutPreview } from "@/components/home/home-about-preview";
 import { HomeHero } from "@/components/home/home-hero";
 import { HomeTechStack } from "@/components/home/home-tech-stack";
+import { OrganizationWebsiteJsonLd } from "@/components/seo/organization-website-jsonld";
 import { getFeaturedProjects } from "@/lib/projects";
 
 export const revalidate = 3600;
@@ -24,6 +25,7 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
+      <OrganizationWebsiteJsonLd locale={locale} />
       <div className="mx-auto w-[80%] max-w-7xl">
         <HomeHero />
       </div>

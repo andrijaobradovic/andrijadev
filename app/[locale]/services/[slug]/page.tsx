@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ScrollReveal } from "@/components/about/scroll-reveal";
 import { ServiceDetail } from "@/components/services/service-detail";
+import { createPageMetadata } from "@/lib/seo";
 import {
   SERVICE_SLUGS,
   getServiceBySlug,
@@ -33,10 +34,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     namespace: "services.detail.metadata",
   });
 
-  return {
+  return createPageMetadata({
+    locale,
+    path: `/services/${slug}`,
     title: tMeta("title", { service: t("title") }),
     description: t("short"),
-  };
+  });
 }
 
 export default async function ServiceDetailPage({ params }: Props) {

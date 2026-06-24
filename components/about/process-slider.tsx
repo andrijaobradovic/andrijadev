@@ -115,10 +115,11 @@ export function ProcessSlider({ steps }: ProcessSliderProps) {
 
   useEffect(() => {
     if (!api) return;
-    onSelect(api);
+    api.on("init", onSelect);
     api.on("select", onSelect);
     api.on("reInit", onSelect);
     return () => {
+      api.off("init", onSelect);
       api.off("select", onSelect);
       api.off("reInit", onSelect);
     };
@@ -127,8 +128,7 @@ export function ProcessSlider({ steps }: ProcessSliderProps) {
   useEffect(() => {
     if (!api) return;
     api.reInit();
-    onSelect(api);
-  }, [api, isMobile, onSelect]);
+  }, [api, isMobile]);
 
   useEffect(() => {
     if (!api) return;

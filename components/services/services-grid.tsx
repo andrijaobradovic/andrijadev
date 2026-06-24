@@ -41,10 +41,11 @@ export function ServicesGrid({ items }: ServicesGridProps) {
 
   useEffect(() => {
     if (!api) return;
-    onSelect(api);
+    api.on("init", onSelect);
     api.on("select", onSelect);
     api.on("reInit", onSelect);
     return () => {
+      api.off("init", onSelect);
       api.off("select", onSelect);
       api.off("reInit", onSelect);
     };

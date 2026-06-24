@@ -8,6 +8,7 @@ import { ProjectsCta } from "@/components/projects/projects-cta";
 import { ProjectsEmpty } from "@/components/projects/projects-empty";
 import { ProjectsHero } from "@/components/projects/projects-hero";
 import { getProjectsForPage } from "@/lib/projects";
+import { createPageMetadata } from "@/lib/seo";
 
 export const revalidate = 3600;
 
@@ -19,10 +20,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "projects.metadata" });
 
-  return {
+  return createPageMetadata({
+    locale,
+    path: "/projects",
     title: t("title"),
     description: t("description"),
-  };
+  });
 }
 
 export default async function ProjectsPage({ params }: Props) {

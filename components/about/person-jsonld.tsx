@@ -1,10 +1,8 @@
-const SITE_URL = "https://andrijadev.com";
-const CONTACT_EMAIL = "info@andrijadev.com";
-
-const SOCIAL_LINKS = [
-  "https://www.linkedin.com/in/andrija-obradovic-1998ao/",
-  "https://www.instagram.com/andrija_obradovic/",
-] as const;
+import {
+  CONTACT_EMAIL,
+  SITE_URL,
+  SOCIAL_LINKS,
+} from "@/lib/seo";
 
 type PersonJsonLdProps = {
   locale: string;

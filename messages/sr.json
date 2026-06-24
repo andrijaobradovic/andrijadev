@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "AndrijaDev - Web Developer",
-    "description": "Pretvaram vaše ideje u web aplikacije. Profesionalni web development, dizajn i održavanje."
+    "description": "Pretvaram vaše ideje u web aplikacije. Izrada sajtova i web aplikacija u Beogradu, Next.js, React i Supabase. Kontaktirajte me za besplatnu konsultaciju."
   },
   "nav": {
     "home": "Početna",
@@ -23,7 +23,7 @@
       "titleAndrija": "Andrija",
       "titleDev": "Dev",
       "subtitle": "Andrija Obradovic - Web Developer",
-      "description": "Kreiram moderne web aplikacije koristeći najnovije tehnologije, veštačku inteligenciju i cloud servise. Od jednostavnih sajtova do kompleksnih full-stack rešenja, razvijam proizvode koji su brzi, optimizovani i spremni za budući rast.",
+      "description": "Kreiram moderne web aplikacije koristeći najnovije tehnologije i cloud servise. Od jednostavnih sajtova do kompleksnih full-stack rešenja, razvijam proizvode koji su brzi, optimizovani i spremni za budući rast.",
       "contact": "Kontaktiraj me",
       "experienceValue": "1+",
       "experienceLabel": "godina iskustva",
@@ -44,11 +44,12 @@
     }
   },
   "blog": {
-    "title": "Blog"
+    "title": "Blog",
+    "description": "Novosti iz sveta web developmenta."
   },
   "about": {
     "metadata": {
-      "title": "O meni - AndrijaDev",
+      "title": "O meni - Andrija Obradovic | AndrijaDev",
       "description": "Profesionalni web development, dizajn i održavanje. Upoznajte developera iza AndrijaDev brenda."
     },
     "hero": {
@@ -104,7 +105,7 @@
   },
   "services": {
     "metadata": {
-      "title": "Usluge | Web sajtovi, Aplikacije, Dizajn - AndrijaDev",
+      "title": "Usluge | AndrijaDev",
       "description": "Profesionalne usluge web developmenta: izrada sajtova, web aplikacija, dizajn, održavanje, nove funkcije i prilagođena rešenja."
     },
     "hero": {
@@ -120,6 +121,31 @@
     },
     "process": {
       "title": "Od ideje do projekta"
+    },
+    "faq": {
+      "title": "Česta pitanja",
+      "items": {
+        "cost": {
+          "question": "Koliko košta izrada web sajta?",
+          "answer": "Cena zavisi od obima projekta — broja stranica, funkcionalnosti, dizajna i integracija. Nakon kratkog razgovora o vašim potrebama dobijate jasnu ponudu prilagođenu projektu."
+        },
+        "timeline": {
+          "question": "Koliko traje izrada web sajta?",
+          "answer": "Jednostavniji sajtovi obično budu spremni za 2–4 nedelje, dok složenije web aplikacije mogu trajati nekoliko meseci. Tačan rok definišemo na početku, u skladu sa obimom i vašim rokovima."
+        },
+        "mobile": {
+          "question": "Da li će sajt biti prilagođen mobilnim telefonima?",
+          "answer": "Da. Svi sajtovi se razvijaju responsivno — prilagođavaju se telefonima, tabletima i desktop uređajima, sa fokusom na brzinu i preglednost."
+        },
+        "content": {
+          "question": "Da li mogu samostalno da menjam sadržaj na sajtu?",
+          "answer": "Zavisi od projekta. Za jednostavnije sajtove mogu da pripremim rešenje koje vam omogućava samostalne izmene; za složenije aplikacije izmene radimo dogovoreno, uz jasnu dokumentaciju."
+        },
+        "support": {
+          "question": "Da li nudite podršku i održavanje nakon završetka sajta?",
+          "answer": "Da. Nakon lansiranja ostajem dostupan za održavanje, ažuriranja, sigurnosne zakrpe i dalji razvoj — po dogovoru, u skladu sa vašim potrebama."
+        }
+      }
     },
     "cta": {
       "ready": "Spremni da krenemo?",

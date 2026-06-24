@@ -1,8 +1,23 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { createPageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "blog" });
+
+  return createPageMetadata({
+    locale,
+    path: "/blog",
+    title: t("title"),
+    description: t("description"),
+    noIndex: true,
+  });
+}
 
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params;

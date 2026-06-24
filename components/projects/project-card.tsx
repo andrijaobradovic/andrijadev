@@ -36,14 +36,15 @@ export function ProjectCard({
   className,
 }: ProjectCardProps) {
   const t = useTranslations("projects.card");
-  const [imageSrc, setImageSrc] = useState(project.imageSrc);
+  const [failedSrc, setFailedSrc] = useState<string | null>(null);
+  const imageSrc =
+    failedSrc === project.imageSrc
+      ? PROJECT_PLACEHOLDER_IMAGE
+      : project.imageSrc;
   const [isTouch, setIsTouch] = useState(false);
   const [internalExpanded, setInternalExpanded] = useState(false);
   const [marqueeActive, setMarqueeActive] = useState(false);
 
-  useEffect(() => {
-    setImageSrc(project.imageSrc);
-  }, [project.imageSrc]);
   const isControlled = isExpanded !== undefined && onToggle !== undefined;
   const isActive = isTouch && (isControlled ? isExpanded : internalExpanded);
 
@@ -99,8 +100,8 @@ export function ProjectCard({
           unoptimized={!isLocalImage(imageSrc)}
           className="object-cover"
           onError={() => {
-            if (imageSrc !== PROJECT_PLACEHOLDER_IMAGE) {
-              setImageSrc(PROJECT_PLACEHOLDER_IMAGE);
+            if (failedSrc !== project.imageSrc) {
+              setFailedSrc(project.imageSrc);
             }
           }}
         />
