@@ -134,8 +134,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--app-vh, 100lvh);
-    min-height: var(--app-vh, 100lvh);
+    height: 100lvh;
+    min-height: 100lvh;
     z-index: -1;
     pointer-events: none;
     background-color: #0e0c14;
