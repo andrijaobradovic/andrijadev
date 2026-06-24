@@ -28,7 +28,7 @@ export async function Footer() {
   const tA11y = await getTranslations("a11y");
 
   return (
-    <footer className="mt-auto border-t border-border/30 bg-background/20 backdrop-blur-sm">
+    <footer className="layout-chrome mt-auto border-t border-border/30 bg-background/20 backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 text-center lg:grid-cols-3 lg:items-start lg:text-left">
           <div className="flex flex-col items-center space-y-3 lg:items-start">

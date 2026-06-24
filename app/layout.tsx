@@ -26,7 +26,7 @@ const geistMono = Geist_Mono({
 
 export const viewport: Viewport = {
   colorScheme: "dark",
-  themeColor: "#120e1e",
+  themeColor: "#0e0c14",
 };
 
 export default async function RootLayout({
@@ -40,7 +40,7 @@ export default async function RootLayout({
     <html
       lang={locale}
       className={cn(
-        "min-h-dvh",
+        "min-h-lvh",
         "antialiased",
         geistSans.variable,
         geistMono.variable,
@@ -49,7 +49,7 @@ export default async function RootLayout({
         spaceGroteskHeading.variable
       )}
     >
-      <body className="flex min-h-dvh flex-col">{children}</body>
+      <body className="flex min-h-lvh flex-col">{children}</body>
     </html>
   );
 }

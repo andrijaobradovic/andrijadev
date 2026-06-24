@@ -122,8 +122,18 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply text-foreground;
+  html {
+    @apply font-sans;
+    background-color: #0e0c14;
+    min-height: 100%;
+    overscroll-behavior-y: none;
+  }
+  html::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
     background-color: #0e0c14;
     /* Layer 1: animated bands — dark & purple always overlap on screen */
     background-image: linear-gradient(
@@ -137,25 +147,19 @@
         #0e0c14 84%,
         #410c54 100%
       ),
-      /* Layer 2: fixed diagonal — dark top-left, purple bottom-right */
+      /* Layer 2: diagonal — dark top-left, purple bottom-right */
       linear-gradient(145deg, #0e0c14 0%, #1a0a26 35%, #410c54 100%);
     background-size: 300% 300%, 100% 100%;
     background-position: 0% 50%, center;
-    background-attachment: fixed;
     animation: gradient-shift 20s ease infinite;
+    transform: translateZ(0);
+  }
+  body {
+    @apply text-foreground;
+    background-color: transparent;
   }
   button:not(:disabled), [role="button"]:not(:disabled) {
     cursor: pointer;
-  }
-  html {
-    @apply font-sans;
-    background-color: #0e0c14;
-  }
-}
-
-@media (hover: none) and (pointer: coarse) {
-  body {
-    background-attachment: scroll;
   }
 }
 
@@ -172,7 +176,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body {
+  html::before {
     animation: none;
     background-size: 100% 100%, 100% 100%;
     background-position: center, center;
@@ -180,6 +184,14 @@
 }
 
 @layer components {
+  @media (hover: none) and (pointer: coarse) {
+    .layout-chrome {
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+      background-color: rgb(18 14 30 / 0.94);
+    }
+  }
+
   .nav-link::after {
     content: "";
     position: absolute;
