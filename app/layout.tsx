@@ -1,6 +1,7 @@
 import type { Viewport } from "next";
 import { Geist, Geist_Mono, Raleway, Space_Grotesk } from "next/font/google";
 import { getLocale } from "next-intl/server";
+import { ViewportHeightSync } from "@/components/layout/viewport-height-sync";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
@@ -49,7 +50,10 @@ export default async function RootLayout({
         spaceGroteskHeading.variable
       )}
     >
-      <body className="flex min-h-lvh flex-col">{children}</body>
+      <body className="flex min-h-lvh flex-col">
+        <ViewportHeightSync />
+        {children}
+      </body>
     </html>
   );
 }
