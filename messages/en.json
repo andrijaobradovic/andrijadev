@@ -127,7 +127,7 @@
       "items": {
         "cost": {
           "question": "How much does website development cost?",
-          "answer": "Pricing depends on project scope — number of pages, features, design, and integrations. After a brief discussion about your needs, you receive a clear quote tailored to your project."
+          "answer": "Pricing depends on project scope, number of pages, features, design, and integrations. After a brief discussion about your needs, you receive a clear quote tailored to your project."
         },
         "timeline": {
           "question": "How long does website development take?",
@@ -135,7 +135,7 @@
         },
         "mobile": {
           "question": "Will the site work well on mobile phones?",
-          "answer": "Yes. All websites are built responsively — they adapt to phones, tablets, and desktops, with a focus on speed and readability."
+          "answer": "Yes. All websites are built responsively, they adapt to phones, tablets, and desktops, with a focus on speed and readability."
         },
         "content": {
           "question": "Can I update the website content myself?",
@@ -143,7 +143,7 @@
         },
         "support": {
           "question": "Do you offer support and maintenance after launch?",
-          "answer": "Yes. After launch, I remain available for maintenance, updates, security patches, and further development — by agreement, according to your needs."
+          "answer": "Yes. After launch, I remain available for maintenance, updates, security patches, and further development, by agreement, according to your needs."
         }
       }
     },

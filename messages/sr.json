@@ -127,7 +127,7 @@
       "items": {
         "cost": {
           "question": "Koliko košta izrada web sajta?",
-          "answer": "Cena zavisi od obima projekta — broja stranica, funkcionalnosti, dizajna i integracija. Nakon kratkog razgovora o vašim potrebama dobijate jasnu ponudu prilagođenu projektu."
+          "answer": "Cena zavisi od obima projekta, broja stranica, funkcionalnosti, dizajna i integracija. Nakon kratkog razgovora o Vašim potrebama dobijate jasnu ponudu prilagođenu projektu."
         },
         "timeline": {
           "question": "Koliko traje izrada web sajta?",
@@ -135,15 +135,15 @@
         },
         "mobile": {
           "question": "Da li će sajt biti prilagođen mobilnim telefonima?",
-          "answer": "Da. Svi sajtovi se razvijaju responsivno — prilagođavaju se telefonima, tabletima i desktop uređajima, sa fokusom na brzinu i preglednost."
+          "answer": "Da. Svi sajtovi se razvijaju responsivno, odnosno, prilagođavaju se telefonima, tabletima i desktop uređajima, sa fokusom na brzinu i preglednost."
         },
         "content": {
           "question": "Da li mogu samostalno da menjam sadržaj na sajtu?",
-          "answer": "Zavisi od projekta. Za jednostavnije sajtove mogu da pripremim rešenje koje vam omogućava samostalne izmene; za složenije aplikacije izmene radimo dogovoreno, uz jasnu dokumentaciju."
+          "answer": "Zavisi od projekta. Za jednostavnije sajtove mogu da pripremim rešenje koje Vam omogućava samostalne izmene; za složenije aplikacije izmene radimo dogovoreno, uz jasnu dokumentaciju."
         },
         "support": {
           "question": "Da li nudite podršku i održavanje nakon završetka sajta?",
-          "answer": "Da. Nakon lansiranja ostajem dostupan za održavanje, ažuriranja, sigurnosne zakrpe i dalji razvoj — po dogovoru, u skladu sa vašim potrebama."
+          "answer": "Da. Nakon lansiranja ostajem dostupan za održavanje, ažuriranja, sigurnosne zakrpe i dalji razvoj, po dogovoru, u skladu sa Vašim potrebama."
         }
       }
     },
