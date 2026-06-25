@@ -1,7 +1,7 @@
 import { RiMailLine, RiMapPinLine } from "@remixicon/react";
 import { getTranslations } from "next-intl/server";
 
-const CONTACT_EMAIL = "info@andrijadev.com";
+const CONTACT_EMAIL = "andrija@andrijadev.com";
 
 export async function ContactInfo() {
   const tHero = await getTranslations("contact.hero");

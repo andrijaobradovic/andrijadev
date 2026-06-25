@@ -4,7 +4,7 @@ import { routing, type Locale } from "@/i18n/routing";
 export const SITE_URL = "https://andrijadev.com";
 export const SITE_NAME = "AndrijaDev";
 export const OG_IMAGE = "/og-image.png";
-export const CONTACT_EMAIL = "info@andrijadev.com";
+export const CONTACT_EMAIL = "andrija@andrijadev.com";
 
 export const SOCIAL_LINKS = [
   "https://www.linkedin.com/in/andrija-obradovic-1998ao/",

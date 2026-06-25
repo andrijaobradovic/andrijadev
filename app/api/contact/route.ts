@@ -31,7 +31,7 @@ const FIELD_LIMITS = {
 } as const;
 
 const FROM_EMAIL =
-  process.env.CONTACT_FROM_EMAIL ?? "AndrijaDev <info@andrijadev.com>";
+  process.env.CONTACT_FROM_EMAIL ?? "AndrijaDev <andrija@andrijadev.com>";
 
 const autoReply = {
   en: {

@@ -12,7 +12,7 @@ const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/andrija_obradovic/",
 } as const;
 
-const CONTACT_EMAIL = "info@andrijadev.com";
+const CONTACT_EMAIL = "andrija@andrijadev.com";
 
 const footerRoutes = [
   { href: "/", key: "home" },

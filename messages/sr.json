@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "AndrijaDev - Web Developer",
-    "description": "Pretvaram vaše ideje u web aplikacije. Izrada sajtova i web aplikacija u Beogradu, Next.js, React i Supabase. Kontaktirajte me za besplatnu konsultaciju."
+    "description": "Pretvaram vaše ideje u web aplikacije. Izrada sajtova i web aplikacija u Srbiji/Beogradu. Koristim Next.js, React i Supabase i ostale alate. Kontaktirajte me za besplatnu konsultaciju."
   },
   "nav": {
     "home": "Početna",
@@ -32,7 +32,7 @@
     },
     "aboutPreview": {
       "title": "O meni",
-      "description": "Diplomirani sam matematičar i web developer.\nBavim se razvojem modernih web aplikacija i digitalnih proizvoda, od ideje do gotovog rešenja. Radim sa React-om, Next.js-om i Node.js-om, dok za backend koristim Supabase (PostgreSQL, Auth, Storage i API) i druge cloud servise. U razvoj uključujem i AI alate za ubrzanje procesa i poboljšanje funkcionalnosti aplikacija.",
+      "description": "Ja sam Andrija Obradovic, diplomirani matematičar i web developer.\nBavim se razvojem modernih web aplikacija i digitalnih proizvoda, od ideje do gotovog rešenja. Radim sa React-om, Next.js-om, TypeScript-om, Tailwind CSS-om, Bootstrap-om, Git-om, Vercel-om i drugim alatima. U razvoj uključujem i AI alate za ubrzanje procesa i poboljšanje funkcionalnosti aplikacija.",
       "cta": "Više o meni",
       "imageAlt": "Andrija Obradovic - web developer"
     },
@@ -161,7 +161,7 @@
     "items": {
       "websites": {
         "title": "Web sajtovi",
-        "short": "Profesionalni, responzivni sajtovi izgrađeni modernim tehnologijama koji predstavljaju Vaš brend i privlače publiku.",
+        "short": "Profesionalni, responzivni web sajtovi izgrađeni modernim tehnologijama koji predstavljaju Vaš brend i privlače publiku.",
         "detail": {
           "p1": "Web sajt je idealno rešenje za kompanije, preduzetnike i pojedince kojima je potrebna profesionalna online prezentacija bez složenih funkcionalnosti i naprednih sistema. Ova vrsta sajta namenjena je projektima koji ne zahtevaju kompleksne implementacije poput sistema za registraciju i prijavu korisnika, korisničkih naloga ili naprednih poslovnih procesa. Cilj je da Vaši posetioci brzo pronađu potrebne informacije i jednostavno stupe u kontakt sa Vama.",
           "p2": "Izrađujem moderne, responzivne i optimizovane sajtove koji jasno predstavljaju Vaš brend, usluge i proizvode, ostavljajući snažan prvi utisak na potencijalne klijente. Fokusiram se na optimizaciju, preglednost i kvalitetno korisničko iskustvo na svim uređajima.",

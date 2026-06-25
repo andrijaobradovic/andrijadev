@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "AndrijaDev - Web Developer",
-    "description": "Turning your ideas into web applications. Website and web app development in Belgrade, Next.js, React, and Supabase. Contact me for a free consultation."
+    "description": "Turning your ideas into web applications. Website and web app development in Serbia/Belgrade. I'm using Next.js, React, Supabase. and other tools. Contact me for a free consultation."
   },
   "nav": {
     "home": "Home",
@@ -32,7 +32,7 @@
     },
     "aboutPreview": {
       "title": "About me",
-      "description": "I am a graduate mathematician and web developer.\nI develop modern web applications and digital products, from idea to finished solution. I work with React, Next.js, and Node.js, while using Supabase (PostgreSQL, Auth, Storage, and API) and other cloud services for the backend. I also integrate AI tools into my development process to speed up workflows and improve application functionality.",
+      "description": "I am Andrija Obradovic, graduate mathematician and web developer.\nI develop modern web applications and digital products, from idea to finished solution. I work with React, Next.js, TypeScript, Tailwind CSS, Bootstrap, Git, Vercel and other tools. I also integrate AI tools into my development process to speed up workflows and improve application functionality.",
       "cta": "More about me",
       "imageAlt": "Andrija Obradovic - web developer"
     },
